@@ -86,10 +86,8 @@ title: My Github YAML Editor Micro Tool Base
           $('#editor tr').each(function (i, row) {
               $type = row.title;
               $id = row.id;
-              console.log("type: " + $type);
               if($type=='entry')
                 {
-                  console.log("id: " + $id);
                   $name = document.getElementById($id).dname
                   $value = document.getElementById($id+'-value').value;
                   $yaml_store[$id]['value'] = $value;
