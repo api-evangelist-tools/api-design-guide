@@ -60,11 +60,11 @@ title: My Github YAML Editor Micro Tool Base
 
                 if($displayCategory != $topic_category)
                   {
-                  $( "#editor" ).append( "<tr id='" + $rowKey + "-title' style='padding: 3px 0px 3px 0px;'><td align='left' colspan='2' style='font-weight: bold; font-size: 18px;'>" + $topic_category + "</td></tr>" );
+                  $( "#editor" ).append( "<tr id='" + $rowKey + "-title' style='padding: 3px 0px 3px 0px;'><td align='left' colspan='2' style='font-weight: bold; font-size: 20px;'>" + $topic_category + "</td></tr>" );
                   $displayCategory = $rowEntry.category;
                   }
 
-                $( "#editor" ).append( "<tr id='row-" + $rowKey + "' style='padding: 3px 0px 3px 0px;'><td id='row-" + $rowKey + "-label' align='right' style='font-weight: bold; width: 35%; font-size: 14px;'>" + $topic_name + ":</td><td><textarea name='" + $topic_name + "' id='text-" + $rowKey + "-field' style='width: 100%;'></textarea></td></tr>" );
+                $( "#editor" ).append( "<tr style='padding: 3px 0px 3px 0px;'><td align='right' style='width: 30%; font-size: 14px;'>" + $topic_name + ":</td><td><textarea name='" + $topic_name + "' id='" + $rowKey + "' style='width: 100%;'></textarea></td></tr>" );
 
                 $( "#editor" ).append( "<tr><td colspan='2'><hr style='padding: 0px; margin: 0px;'></td></tr>");
 
