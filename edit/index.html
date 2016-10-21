@@ -43,7 +43,7 @@ title: My Github YAML Editor Micro Tool Base
 
             $categories = new Array();
 
-            // If no error we have access, read YAML store
+            // Build a category array to sort
             repo.read('gh-pages', '_data/topics.yaml', function(err, data) {
               $yaml_load = jsyaml.load(data);
               $yaml_store = $yaml_load.items;
@@ -57,8 +57,8 @@ title: My Github YAML Editor Micro Tool Base
                 });
             });
             $categories.sort();
-            //console.log($categories);
-            // If no error we have access, read YAML store
+
+            // Now pull the entries for listing.
             repo.read('gh-pages', '_data/topics.yaml', function(err, data) {
 
               $yaml_load = jsyaml.load(data);
@@ -81,11 +81,11 @@ title: My Github YAML Editor Micro Tool Base
 
                   if($topic_category == $category)
                     {
-                    console.log($row);
                     $( "#editor" ).append( "<tr id='" + $topic_id + "' title='entry' style='padding: 3px 0px 3px 0px;'><td align='left' style='width: 30%; font-size: 14px; padding-left: 20px;'><a href='http://apistylebook.com/design/topics/" + $topic_id + "' target='_blank'>" + $topic_name + "</a>: " + $topic_description + " (<a href='http://apistylebook.com/design/topics/" + $topic_id + "' target='_blank'>details</a>)</td></tr><tr><td align='center'><textarea name='" + $row + "' id='" + $topic_id + "-value' style='width: 90%; height: 50px;'></textarea></td></tr>" );
                     $( "#editor" ).append( "<tr title='line'><td align='center'><hr style='padding: 0px; margin: 0px;'></td></tr>");
                     }
-                  });
+
+                });
               });
             });
           }
@@ -132,12 +132,12 @@ title: My Github YAML Editor Micro Tool Base
               $writepath = '_data/topics.yaml';
               $path = treeValue['path'];
               $sha = treeValue['sha'];
+              
               //console.log($path + ' == ' + $writepath);
               if($path==$writepath)
                 {
                 repo.writemanual('gh-pages',$writepath, $yaml_dump, 'Save', $sha, function(err) { });
-                console.log("writing " + $writepath);
-                //alert("saved " + $writepath);
+                //console.log("writing " + $writepath);
                 }
               });
             });
