@@ -48,7 +48,11 @@ title: My Github YAML Editor Micro Tool Base
               $yaml_store = jsyaml.load(data);
               $.each($yaml_store, function($rowKey, $rowEntry) {
                   $added = $.inArray($rowEntry.category, $categories);
-                  console.log("Added: " + $added);
+                  //console.log("Added: " + $added);
+                  if($added==-1)
+                    {
+                    $categories.push($rowEntry.category);
+                    }
                 });
             });
 
