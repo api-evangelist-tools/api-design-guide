@@ -55,6 +55,7 @@ title: My Github YAML Editor Micro Tool Base
                     }
                 });
             });
+            $categories.sort();
             console.log($categories);
             // If no error we have access, read YAML store
             repo.read('gh-pages', '_data/topics.yaml', function(err, data) {
