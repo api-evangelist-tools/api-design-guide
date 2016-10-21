@@ -8,6 +8,7 @@ items:
         href: /design/topics/collection-pagination.yaml
       topicGuidelines:
         href: /design/topics/collection-pagination/guidelines.yaml
+    value: ''
   - id: collection
     category: Collection Resources
     name: Collection
@@ -17,6 +18,7 @@ items:
         href: /design/topics/collection.yaml
       topicGuidelines:
         href: /design/topics/collection/guidelines.yaml
+    value: ''
   - id: data-format
     category: Data
     name: Data format
@@ -26,6 +28,7 @@ items:
         href: /design/topics/data-format.yaml
       topicGuidelines:
         href: /design/topics/data-format/guidelines.yaml
+    value: ''
   - id: governance
     category: API Lifecycle
     name: Governance
@@ -35,6 +38,7 @@ items:
         href: /design/topics/governance.yaml
       topicGuidelines:
         href: /design/topics/governance/guidelines.yaml
+    value: ''
   - id: http-caching
     category: HTTP Protocol
     name: Caching
@@ -44,6 +48,7 @@ items:
         href: /design/topics/http-caching.yaml
       topicGuidelines:
         href: /design/topics/http-caching/guidelines.yaml
+    value: ''
   - id: http-headers
     category: HTTP Protocol
     name: HTTP Headers
@@ -53,6 +58,7 @@ items:
         href: /design/topics/http-headers.yaml
       topicGuidelines:
         href: /design/topics/http-headers/guidelines.yaml
+    value: ''
   - id: http-status-200
     category: HTTP Status Success
     name: 200 OK
@@ -67,6 +73,7 @@ items:
         href: /design/topics/http-status-200.yaml
       topicGuidelines:
         href: /design/topics/http-status-200/guidelines.yaml
+    value: ''
   - id: http-status-201
     category: HTTP Status Success
     name: 201 Created
@@ -78,6 +85,7 @@ items:
         href: /design/topics/http-status-201.yaml
       topicGuidelines:
         href: /design/topics/http-status-201/guidelines.yaml
+    value: ''
   - id: http-status-202
     category: HTTP Status Success
     name: 202 Accepted
@@ -90,6 +98,7 @@ items:
         href: /design/topics/http-status-202.yaml
       topicGuidelines:
         href: /design/topics/http-status-202/guidelines.yaml
+    value: ''
   - id: http-status-204
     category: HTTP Status Success
     name: 204 No Content
@@ -101,6 +110,7 @@ items:
         href: /design/topics/http-status-204.yaml
       topicGuidelines:
         href: /design/topics/http-status-204/guidelines.yaml
+    value: ''
   - id: http-status-301
     category: HTTP Status Redirection
     name: 301 Moved Permanently
@@ -110,6 +120,7 @@ items:
         href: /design/topics/http-status-301.yaml
       topicGuidelines:
         href: /design/topics/http-status-301/guidelines.yaml
+    value: ''
   - id: http-status-304
     category: HTTP Status Redirection
     name: 304 Not Modified
@@ -123,6 +134,7 @@ items:
         href: /design/topics/http-status-304.yaml
       topicGuidelines:
         href: /design/topics/http-status-304/guidelines.yaml
+    value: ''
   - id: http-status-401
     category: HTTP Status User Error
     name: 401 Unauthorized
@@ -136,6 +148,7 @@ items:
         href: /design/topics/http-status-401.yaml
       topicGuidelines:
         href: /design/topics/http-status-401/guidelines.yaml
+    value: ''
   - id: http-status-404
     category: HTTP Status User Error
     name: 404 Not Found
@@ -147,6 +160,7 @@ items:
         href: /design/topics/http-status-404.yaml
       topicGuidelines:
         href: /design/topics/http-status-404/guidelines.yaml
+    value: ''
   - id: http-status-412
     category: HTTP Status User Error
     name: 412 Precondition Failed
@@ -158,6 +172,7 @@ items:
         href: /design/topics/http-status-412.yaml
       topicGuidelines:
         href: /design/topics/http-status-412/guidelines.yaml
+    value: ''
   - id: http-status
     category: HTTP Protocol
     name: HTTP Statuses
@@ -167,6 +182,7 @@ items:
         href: /design/topics/http-status.yaml
       topicGuidelines:
         href: /design/topics/http-status/guidelines.yaml
+    value: ''
   - id: http-methods-delete
     category: HTTP Methods
     name: DELETE
@@ -176,6 +192,7 @@ items:
         href: /design/topics/http-methods-delete.yaml
       topicGuidelines:
         href: /design/topics/http-methods-delete/guidelines.yaml
+    value: ''
   - id: http-methods-put
     category: HTTP Methods
     name: PUT
@@ -189,6 +206,7 @@ items:
         href: /design/topics/http-methods-put.yaml
       topicGuidelines:
         href: /design/topics/http-methods-put/guidelines.yaml
+    value: ''
   - id: hypermedia-read
     category: Hypermedia
     name: Hypermedia (read)
@@ -198,6 +216,7 @@ items:
         href: /design/topics/hypermedia-read.yaml
       topicGuidelines:
         href: /design/topics/hypermedia-read/guidelines.yaml
+    value: ''
   - id: hypermedia-write
     category: Hypermedia
     name: Hypermedia (write)
@@ -207,6 +226,7 @@ items:
         href: /design/topics/hypermedia-write.yaml
       topicGuidelines:
         href: /design/topics/hypermedia-write/guidelines.yaml
+    value: ''
   - id: hypermedia
     category: Hypermedia
     name: Hypermedia
@@ -216,6 +236,7 @@ items:
         href: /design/topics/hypermedia.yaml
       topicGuidelines:
         href: /design/topics/hypermedia/guidelines.yaml
+    value: ''
   - id: resource-deletion
     category: Resources
     name: Delete resource
@@ -225,6 +246,7 @@ items:
         href: /design/topics/resource-deletion.yaml
       topicGuidelines:
         href: /design/topics/resource-deletion/guidelines.yaml
+    value: ''
   - id: resource-retrieve-dereference
     category: Resources
     name: Dereference Relationships
@@ -234,6 +256,7 @@ items:
         href: /design/topics/resource-retrieve-dereference.yaml
       topicGuidelines:
         href: /design/topics/resource-retrieve-dereference/guidelines.yaml
+    value: ''
   - id: resource-update
     category: Resources
     name: Update resource
@@ -243,6 +266,7 @@ items:
         href: /design/topics/resource-update.yaml
       topicGuidelines:
         href: /design/topics/resource-update/guidelines.yaml
+    value: ''
   - id: resource-url-format
     category: Resources
     name: URL format
@@ -252,6 +276,7 @@ items:
         href: /design/topics/resource-url-format.yaml
       topicGuidelines:
         href: /design/topics/resource-url-format/guidelines.yaml
+    value: ''
   - id: resource
     category: Resources
     name: Resource
@@ -261,6 +286,7 @@ items:
         href: /design/topics/resource.yaml
       topicGuidelines:
         href: /design/topics/resource/guidelines.yaml
+    value: ''
   - id: security
     category: Security
     name: Security
@@ -270,6 +296,7 @@ items:
         href: /design/topics/security.yaml
       topicGuidelines:
         href: /design/topics/security/guidelines.yaml
+    value: ''
   - id: versioning
     category: API Lifecycle
     name: Versionning
@@ -279,6 +306,7 @@ items:
         href: /design/topics/versioning.yaml
       topicGuidelines:
         href: /design/topics/versioning/guidelines.yaml
+    value: ''
   - id: developer-experience
     category: Miscellaneous
     name: Developer experience
@@ -288,6 +316,7 @@ items:
         href: /design/topics/developer-experience.yaml
       topicGuidelines:
         href: /design/topics/developer-experience/guidelines.yaml
+    value: ''
   - id: rate-limiting
     category: Miscellaneous
     name: Rate limiting
@@ -297,6 +326,7 @@ items:
         href: /design/topics/rate-limiting.yaml
       topicGuidelines:
         href: /design/topics/rate-limiting/guidelines.yaml
+    value: ''
   - id: cors
     category: Miscellaneous
     name: CORS
@@ -306,6 +336,7 @@ items:
         href: /design/topics/cors.yaml
       topicGuidelines:
         href: /design/topics/cors/guidelines.yaml
+    value: ''
   - id: documentation
     category: Miscellaneous
     name: Documentation
@@ -315,6 +346,7 @@ items:
         href: /design/topics/documentation.yaml
       topicGuidelines:
         href: /design/topics/documentation/guidelines.yaml
+    value: ''
   - id: http-content-negotiation
     category: HTTP Protocol
     name: Content negociation and media types
@@ -326,6 +358,7 @@ items:
         href: /design/topics/http-content-negotiation.yaml
       topicGuidelines:
         href: /design/topics/http-content-negotiation/guidelines.yaml
+    value: ''
   - id: http-status-405
     category: HTTP Status User Error
     name: 405 Method Not Allowed
@@ -338,6 +371,7 @@ items:
         href: /design/topics/http-status-405.yaml
       topicGuidelines:
         href: /design/topics/http-status-405/guidelines.yaml
+    value: ''
   - id: http-status-standard-error
     category: Error handling
     name: Error format
@@ -347,6 +381,7 @@ items:
         href: /design/topics/http-status-standard-error.yaml
       topicGuidelines:
         href: /design/topics/http-status-standard-error/guidelines.yaml
+    value: ''
   - id: http-methods-get
     category: HTTP Methods
     name: GET
@@ -359,6 +394,7 @@ items:
         href: /design/topics/http-methods-get.yaml
       topicGuidelines:
         href: /design/topics/http-methods-get/guidelines.yaml
+    value: ''
   - id: http-methods-head
     category: HTTP Methods
     name: HEAD
@@ -372,6 +408,7 @@ items:
         href: /design/topics/http-methods-head.yaml
       topicGuidelines:
         href: /design/topics/http-methods-head/guidelines.yaml
+    value: ''
   - id: http-methods-post
     category: HTTP Methods
     name: POST
@@ -387,6 +424,7 @@ items:
         href: /design/topics/http-methods-post.yaml
       topicGuidelines:
         href: /design/topics/http-methods-post/guidelines.yaml
+    value: ''
   - id: http-methods
     category: HTTP Methods
     name: HTTP methods
@@ -396,6 +434,7 @@ items:
         href: /design/topics/http-methods.yaml
       topicGuidelines:
         href: /design/topics/http-methods/guidelines.yaml
+    value: ''
   - id: global-design
     category: API Design
     name: Global design
@@ -405,6 +444,7 @@ items:
         href: /design/topics/global-design.yaml
       topicGuidelines:
         href: /design/topics/global-design/guidelines.yaml
+    value: ''
   - id: resource-relationships
     category: Resources
     name: Relationships
@@ -414,6 +454,7 @@ items:
         href: /design/topics/resource-relationships.yaml
       topicGuidelines:
         href: /design/topics/resource-relationships/guidelines.yaml
+    value: ''
   - id: security-data
     category: Security
     name: Data privacy
@@ -423,6 +464,7 @@ items:
         href: /design/topics/security-data.yaml
       topicGuidelines:
         href: /design/topics/security-data/guidelines.yaml
+    value: ''
   - id: api-chaining
     category: Miscellaneous
     name: API chaining
@@ -432,6 +474,7 @@ items:
         href: /design/topics/api-chaining.yaml
       topicGuidelines:
         href: /design/topics/api-chaining/guidelines.yaml
+    value: ''
   - id: http-methods-patch
     category: HTTP Methods
     name: PATCH
@@ -442,6 +485,7 @@ items:
         href: /design/topics/http-methods-patch.yaml
       topicGuidelines:
         href: /design/topics/http-methods-patch/guidelines.yaml
+    value: ''
   - id: http-methods-options
     category: HTTP Methods
     name: OPTIONS
@@ -454,6 +498,7 @@ items:
         href: /design/topics/http-methods-options.yaml
       topicGuidelines:
         href: /design/topics/http-methods-options/guidelines.yaml
+    value: ''
   - id: http-methods-alternative
     category: HTTP Methods
     name: Forbidden methods alternatives
@@ -463,6 +508,7 @@ items:
         href: /design/topics/http-methods-alternative.yaml
       topicGuidelines:
         href: /design/topics/http-methods-alternative/guidelines.yaml
+    value: ''
   - id: resource-id-semantic
     category: Resources
     name: ID with semantic
@@ -472,6 +518,7 @@ items:
         href: /design/topics/resource-id-semantic.yaml
       topicGuidelines:
         href: /design/topics/resource-id-semantic/guidelines.yaml
+    value: ''
   - id: resource-retrieve
     category: Resources
     name: Retrieve resource
@@ -481,6 +528,7 @@ items:
         href: /design/topics/resource-retrieve.yaml
       topicGuidelines:
         href: /design/topics/resource-retrieve/guidelines.yaml
+    value: ''
   - id: resource-retrieve-partial
     category: Resources
     name: Retrieve resource partially
@@ -490,6 +538,7 @@ items:
         href: /design/topics/resource-retrieve-partial.yaml
       topicGuidelines:
         href: /design/topics/resource-retrieve-partial/guidelines.yaml
+    value: ''
   - id: resource-creation
     category: Resources
     name: Create resource
@@ -499,6 +548,7 @@ items:
         href: /design/topics/resource-creation.yaml
       topicGuidelines:
         href: /design/topics/resource-creation/guidelines.yaml
+    value: ''
   - id: resource-creation-with-id
     category: Resources
     name: Create resource with a specific ID
@@ -508,6 +558,7 @@ items:
         href: /design/topics/resource-creation-with-id.yaml
       topicGuidelines:
         href: /design/topics/resource-creation-with-id/guidelines.yaml
+    value: ''
   - id: resource-replacement
     category: Resources
     name: Replace resource
@@ -517,6 +568,7 @@ items:
         href: /design/topics/resource-replacement.yaml
       topicGuidelines:
         href: /design/topics/resource-replacement/guidelines.yaml
+    value: ''
   - id: resource-update-partial
     category: Resources
     name: Update resource partially
@@ -526,6 +578,7 @@ items:
         href: /design/topics/resource-update-partial.yaml
       topicGuidelines:
         href: /design/topics/resource-update-partial/guidelines.yaml
+    value: ''
   - id: resource-multiple
     category: Resources
     name: Batch Bulk
@@ -537,6 +590,7 @@ items:
         href: /design/topics/resource-multiple.yaml
       topicGuidelines:
         href: /design/topics/resource-multiple/guidelines.yaml
+    value: ''
   - id: resource-action
     category: Resources
     name: Action resource
@@ -546,6 +600,7 @@ items:
         href: /design/topics/resource-action.yaml
       topicGuidelines:
         href: /design/topics/resource-action/guidelines.yaml
+    value: ''
   - id: collection-filtering
     category: Collection Resources
     name: Filtering
@@ -555,6 +610,7 @@ items:
         href: /design/topics/collection-filtering.yaml
       topicGuidelines:
         href: /design/topics/collection-filtering/guidelines.yaml
+    value: ''
   - id: naming
     category: Naming
     name: Naming
@@ -564,6 +620,7 @@ items:
         href: /design/topics/naming.yaml
       topicGuidelines:
         href: /design/topics/naming/guidelines.yaml
+    value: ''
   - id: naming-case
     category: Naming
     name: Case
@@ -573,6 +630,7 @@ items:
         href: /design/topics/naming-case.yaml
       topicGuidelines:
         href: /design/topics/naming-case/guidelines.yaml
+    value: ''
   - id: data-format-date-time
     category: Data
     name: Date and Time
@@ -582,6 +640,7 @@ items:
         href: /design/topics/data-format-date-time.yaml
       topicGuidelines:
         href: /design/topics/data-format-date-time/guidelines.yaml
+    value: ''
   - id: data-format-null
     category: Data
     name: Null data
@@ -591,6 +650,7 @@ items:
         href: /design/topics/data-format-null.yaml
       topicGuidelines:
         href: /design/topics/data-format-null/guidelines.yaml
+    value: ''
   - id: undo
     category: Miscellaneous
     name: Undo
@@ -600,6 +660,7 @@ items:
         href: /design/topics/undo.yaml
       topicGuidelines:
         href: /design/topics/undo/guidelines.yaml
+    value: ''
   - id: http-status-302
     category: HTTP Status Redirection
     name: 302 Found
@@ -614,6 +675,7 @@ items:
         href: /design/topics/http-status-302.yaml
       topicGuidelines:
         href: /design/topics/http-status-302/guidelines.yaml
+    value: ''
   - id: http-status-303
     category: HTTP Status Redirection
     name: 303 See Other
@@ -627,6 +689,7 @@ items:
         href: /design/topics/http-status-303.yaml
       topicGuidelines:
         href: /design/topics/http-status-303/guidelines.yaml
+    value: ''
   - id: http-status-400
     category: HTTP Status User Error
     name: 400 Bad Request
@@ -639,6 +702,7 @@ items:
         href: /design/topics/http-status-400.yaml
       topicGuidelines:
         href: /design/topics/http-status-400/guidelines.yaml
+    value: ''
   - id: http-status-403
     category: HTTP Status User Error
     name: 403 Forbidden
@@ -651,6 +715,7 @@ items:
         href: /design/topics/http-status-403.yaml
       topicGuidelines:
         href: /design/topics/http-status-403/guidelines.yaml
+    value: ''
   - id: http-status-422
     category: HTTP Status User Error
     name: 422 Unprocessable Entity
@@ -662,6 +727,7 @@ items:
         href: /design/topics/http-status-422.yaml
       topicGuidelines:
         href: /design/topics/http-status-422/guidelines.yaml
+    value: ''
   - id: http-status-500
     category: HTTP Status Server Error
     name: 500 Internal Server Error
@@ -673,6 +739,7 @@ items:
         href: /design/topics/http-status-500.yaml
       topicGuidelines:
         href: /design/topics/http-status-500/guidelines.yaml
+    value: ''
   - id: http-status-503
     category: HTTP Status Server Error
     name: 503 Service Unavailable
@@ -684,6 +751,7 @@ items:
         href: /design/topics/http-status-503.yaml
       topicGuidelines:
         href: /design/topics/http-status-503/guidelines.yaml
+    value: ''
   - id: resource-id
     category: Resources
     name: Resource ID
@@ -693,6 +761,7 @@ items:
         href: /design/topics/resource-id.yaml
       topicGuidelines:
         href: /design/topics/resource-id/guidelines.yaml
+    value: ''
   - id: collection-retrieve
     category: Collection Resources
     name: Retrieve a collection
@@ -702,6 +771,7 @@ items:
         href: /design/topics/collection-retrieve.yaml
       topicGuidelines:
         href: /design/topics/collection-retrieve/guidelines.yaml
+    value: ''
   - id: query-parameter
     category: Miscellaneous
     name: Query parameters
@@ -711,6 +781,7 @@ items:
         href: /design/topics/query-parameter.yaml
       topicGuidelines:
         href: /design/topics/query-parameter/guidelines.yaml
+    value: ''
   - id: asynchronicity
     category: Asynchronicity
     name: Asynchronicity
@@ -720,6 +791,7 @@ items:
         href: /design/topics/asynchronicity.yaml
       topicGuidelines:
         href: /design/topics/asynchronicity/guidelines.yaml
+    value: test
   - id: collection-sorting
     category: Collection Resources
     name: Sorting a collection
@@ -729,6 +801,7 @@ items:
         href: /design/topics/collection-sorting.yaml
       topicGuidelines:
         href: /design/topics/collection-sorting/guidelines.yaml
+    value: ''
   - id: data-standards
     category: Data
     name: Standards data
@@ -738,6 +811,7 @@ items:
         href: /design/topics/data-standards.yaml
       topicGuidelines:
         href: /design/topics/data-standards/guidelines.yaml
+    value: ''
   - id: errors
     category: Error handling
     name: Errors
@@ -747,6 +821,7 @@ items:
         href: /design/topics/errors.yaml
       topicGuidelines:
         href: /design/topics/errors/guidelines.yaml
+    value: ''
   - id: http-status-406
     category: HTTP Status User Error
     name: 406 Not Acceptable
@@ -758,6 +833,7 @@ items:
         href: /design/topics/http-status-406.yaml
       topicGuidelines:
         href: /design/topics/http-status-406/guidelines.yaml
+    value: ''
   - id: http-status-408
     category: HTTP Status User Error
     name: 408 Request Timeout
@@ -771,6 +847,7 @@ items:
         href: /design/topics/http-status-408.yaml
       topicGuidelines:
         href: /design/topics/http-status-408/guidelines.yaml
+    value: ''
   - id: http-status-409
     category: HTTP Status User Error
     name: 409 Conflict
@@ -783,6 +860,7 @@ items:
         href: /design/topics/http-status-409.yaml
       topicGuidelines:
         href: /design/topics/http-status-409/guidelines.yaml
+    value: ''
   - id: http-status-410
     category: HTTP Status User Error
     name: 410 Gone
@@ -799,6 +877,7 @@ items:
         href: /design/topics/http-status-410.yaml
       topicGuidelines:
         href: /design/topics/http-status-410/guidelines.yaml
+    value: ''
   - id: http-status-411
     category: HTTP Status User Error
     name: 411 Length Required
@@ -810,6 +889,7 @@ items:
         href: /design/topics/http-status-411.yaml
       topicGuidelines:
         href: /design/topics/http-status-411/guidelines.yaml
+    value: ''
   - id: http-status-415
     category: HTTP Status User Error
     name: 415 Unsupported Media Type
@@ -822,6 +902,7 @@ items:
         href: /design/topics/http-status-415.yaml
       topicGuidelines:
         href: /design/topics/http-status-415/guidelines.yaml
+    value: ''
   - id: http-status-501
     category: HTTP Status Server Error
     name: 501 Not Implemented
@@ -834,6 +915,7 @@ items:
         href: /design/topics/http-status-501.yaml
       topicGuidelines:
         href: /design/topics/http-status-501/guidelines.yaml
+    value: ''
   - id: resource-state
     category: Resources
     name: Resource's state
@@ -843,6 +925,7 @@ items:
         href: /design/topics/resource-state.yaml
       topicGuidelines:
         href: /design/topics/resource-state/guidelines.yaml
+    value: ''
   - id: debug-diagnose
     category: Miscellaneous
     name: Debug and diagnose
@@ -852,6 +935,7 @@ items:
         href: /design/topics/debug-diagnose.yaml
       topicGuidelines:
         href: /design/topics/debug-diagnose/guidelines.yaml
+    value: ''
   - id: http-status-206
     category: HTTP Status Success
     name: 206 Partial Content
@@ -865,6 +949,7 @@ items:
         href: /design/topics/http-status-206.yaml
       topicGuidelines:
         href: /design/topics/http-status-206/guidelines.yaml
+    value: ''
   - id: http-status-429
     category: HTTP Status User Error
     name: 429 Too Many Requests
@@ -876,6 +961,7 @@ items:
         href: /design/topics/http-status-429.yaml
       topicGuidelines:
         href: /design/topics/http-status-429/guidelines.yaml
+    value: ''
   - id: performance
     category: Miscellaneous
     name: Performance and bandwidth
@@ -885,6 +971,7 @@ items:
         href: /design/topics/performance.yaml
       topicGuidelines:
         href: /design/topics/performance/guidelines.yaml
+    value: ''
   - id: http
     category: HTTP Protocol
     name: HTTP protocol
@@ -894,6 +981,7 @@ items:
         href: /design/topics/http.yaml
       topicGuidelines:
         href: /design/topics/http/guidelines.yaml
+    value: ''
   - id: notifications-server-events
     category: Asynchronicity
     name: Notifying API consumers
@@ -903,6 +991,7 @@ items:
         href: /design/topics/notifications-server-events.yaml
       topicGuidelines:
         href: /design/topics/notifications-server-events/guidelines.yaml
+    value: test
   - id: resource-change-tracking
     category: Resources
     name: Track change
@@ -912,6 +1001,7 @@ items:
         href: /design/topics/resource-change-tracking.yaml
       topicGuidelines:
         href: /design/topics/resource-change-tracking/guidelines.yaml
+    value: ''
   - id: guiding-input
     category: Miscellaneous
     name: Guiding inputs
@@ -921,6 +1011,7 @@ items:
         href: /design/topics/guiding-input.yaml
       topicGuidelines:
         href: /design/topics/guiding-input/guidelines.yaml
+    value: ''
   - id: api-counts
     category: API Design
     name: API counts
@@ -930,6 +1021,7 @@ items:
         href: /design/topics/api-counts.yaml
       topicGuidelines:
         href: /design/topics/api-counts/guidelines.yaml
+    value: ''
   - id: http-status-423
     category: HTTP Status User Error
     name: 423 Locked
@@ -939,6 +1031,7 @@ items:
         href: /design/topics/http-status-423.yaml
       topicGuidelines:
         href: /design/topics/http-status-423/guidelines.yaml
+    value: ''
   - id: http-status-428
     category: HTTP Status User Error
     name: 428 Precondition Required
@@ -957,6 +1050,7 @@ items:
         href: /design/topics/http-status-428.yaml
       topicGuidelines:
         href: /design/topics/http-status-428/guidelines.yaml
+    value: ''
   - id: naming-language
     category: Naming
     name: Language
@@ -966,6 +1060,7 @@ items:
         href: /design/topics/naming-language.yaml
       topicGuidelines:
         href: /design/topics/naming-language/guidelines.yaml
+    value: ''
 _links:
   self:
     href: /design/topics.yaml
