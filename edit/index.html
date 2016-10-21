@@ -42,7 +42,7 @@ title: My Github YAML Editor Micro Tool Base
           {
 
             $categories = new Array();
-            $categories.push("API Design");
+
             // If no error we have access, read YAML store
             repo.read('gh-pages', '_data/topics.yaml', function(err, data) {
               $yaml_load = jsyaml.load(data);
@@ -64,8 +64,6 @@ title: My Github YAML Editor Micro Tool Base
               $yaml_load = jsyaml.load(data);
               $yaml_store = $yaml_load.items;
 
-              console.log($yaml_store);
-
               $( "#editor" ).append( "<tr><td colspan='2'><hr style='padding: 0px; margin: 0px;'></td></tr>");
 
               $displayCategory = '';
@@ -75,7 +73,7 @@ title: My Github YAML Editor Micro Tool Base
                 $( "#editor" ).append( "<tr title='category' style='padding: 3px 0px 3px 0px;'><td align='left' colspan='2' style='font-weight: bold; font-size: 20px;'>" + $category + "</td></tr>" );
 
                 $.each($yaml_store, function($row, $rowEntry) {
-                  console.log($row);
+
                   $topic_id = $rowEntry.id;
                   $topic_category = $rowEntry.category;
                   $topic_name = $rowEntry.name;
@@ -109,11 +107,11 @@ title: My Github YAML Editor Micro Tool Base
                 {
                   $name = document.getElementById($id).name
                   $value = document.getElementById($id+'-value').value;
-                  $yaml_store[$name]['value'] = $value;
+                  $yaml_load['items'][$name]['value'] = $value;
                 }
               });
 
-          $yaml_dump = jsyaml.dump($yaml_store);
+          $yaml_dump = jsyaml.dump($yaml_load);
           console.log($yaml_dump);
 
           // Grab the token from cookie
