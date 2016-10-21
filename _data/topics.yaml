@@ -56,7 +56,12 @@ items:
   - id: http-status-200
     category: HTTP Status Success
     name: 200 OK
-    description: 'Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request, the response will contain an entity describing or containing the result of the action.'
+    description: >-
+      Standard response for successful HTTP requests. The actual response will
+      depend on the request method used. In a GET request, the response will
+      contain an entity corresponding to the requested resource. In a POST
+      request, the response will contain an entity describing or containing the
+      result of the action.
     _links:
       self:
         href: /design/topics/http-status-200.yaml
@@ -65,7 +70,9 @@ items:
   - id: http-status-201
     category: HTTP Status Success
     name: 201 Created
-    description: 'The request has been fulfilled, resulting in the creation of a new resource.'
+    description: >-
+      The request has been fulfilled, resulting in the creation of a new
+      resource.
     _links:
       self:
         href: /design/topics/http-status-201.yaml
@@ -74,8 +81,10 @@ items:
   - id: http-status-202
     category: HTTP Status Success
     name: 202 Accepted
-    description: |
-      The request has been accepted for processing, but the processing has not been completed. The request might or might not be eventually acted upon, and may be disallowed when processing occurs.
+    description: >
+      The request has been accepted for processing, but the processing has not
+      been completed. The request might or might not be eventually acted upon,
+      and may be disallowed when processing occurs.
     _links:
       self:
         href: /design/topics/http-status-202.yaml
@@ -84,7 +93,9 @@ items:
   - id: http-status-204
     category: HTTP Status Success
     name: 204 No Content
-    description: The server successfully processed the request and is not returning any content.
+    description: >-
+      The server successfully processed the request and is not returning any
+      content.
     _links:
       self:
         href: /design/topics/http-status-204.yaml
@@ -102,8 +113,11 @@ items:
   - id: http-status-304
     category: HTTP Status Redirection
     name: 304 Not Modified
-    description: |
-      Indicates that the resource has not been modified since the version specified by the request headers If-Modified-Since or If-None-Match. In such case, there is no need to retransmit the resource since the client still has a previously-downloaded copy.
+    description: >
+      Indicates that the resource has not been modified since the version
+      specified by the request headers If-Modified-Since or If-None-Match. In
+      such case, there is no need to retransmit the resource since the client
+      still has a previously-downloaded copy.
     _links:
       self:
         href: /design/topics/http-status-304.yaml
@@ -112,8 +126,11 @@ items:
   - id: http-status-401
     category: HTTP Status User Error
     name: 401 Unauthorized
-    description: |
-      Similar to 403 Forbidden, but specifically for use when authentication is required and has failed or has not yet been provided. The response must include a WWW-Authenticate header field containing a challenge applicable to the requested resource.
+    description: >
+      Similar to 403 Forbidden, but specifically for use when authentication is
+      required and has failed or has not yet been provided. The response must
+      include a WWW-Authenticate header field containing a challenge applicable
+      to the requested resource.
     _links:
       self:
         href: /design/topics/http-status-401.yaml
@@ -122,7 +139,9 @@ items:
   - id: http-status-404
     category: HTTP Status User Error
     name: 404 Not Found
-    description: The requested resource could not be found but may be available in the future. Subsequent requests by the client are permissible.
+    description: >-
+      The requested resource could not be found but may be available in the
+      future. Subsequent requests by the client are permissible.
     _links:
       self:
         href: /design/topics/http-status-404.yaml
@@ -131,7 +150,9 @@ items:
   - id: http-status-412
     category: HTTP Status User Error
     name: 412 Precondition Failed
-    description: The server does not meet one of the preconditions that the requester put on the request.
+    description: >-
+      The server does not meet one of the preconditions that the requester put
+      on the request.
     _links:
       self:
         href: /design/topics/http-status-412.yaml
@@ -158,8 +179,11 @@ items:
   - id: http-methods-put
     category: HTTP Methods
     name: PUT
-    description: |
-      The PUT method requests that the enclosed entity be stored under the supplied URI. If the URI refers to an already existing resource, it is modified; if the URI does not point to an existing resource, then the server can create the resource with that URI.
+    description: >
+      The PUT method requests that the enclosed entity be stored under the
+      supplied URI. If the URI refers to an already existing resource, it is
+      modified; if the URI does not point to an existing resource, then the
+      server can create the resource with that URI.
     _links:
       self:
         href: /design/topics/http-methods-put.yaml
@@ -294,7 +318,9 @@ items:
   - id: http-content-negotiation
     category: HTTP Protocol
     name: Content negociation and media types
-    description: 'How to describe your API data format and/or propose different formats (like json, yaml, xml atom, ...)'
+    description: >-
+      How to describe your API data format and/or propose different formats
+      (like json, yaml, xml atom, ...)
     _links:
       self:
         href: /design/topics/http-content-negotiation.yaml
@@ -303,8 +329,10 @@ items:
   - id: http-status-405
     category: HTTP Status User Error
     name: 405 Method Not Allowed
-    description: |
-      A request method is not supported for the requested resource; for example, a GET request on a form which requires data to be presented via POST, or a PUT request on a read-only resource.
+    description: >
+      A request method is not supported for the requested resource; for example,
+      a GET request on a form which requires data to be presented via POST, or a
+      PUT request on a read-only resource.
     _links:
       self:
         href: /design/topics/http-status-405.yaml
@@ -322,8 +350,10 @@ items:
   - id: http-methods-get
     category: HTTP Methods
     name: GET
-    description: |
-      The GET method requests a representation of the specified resource. Requests using GET should only retrieve data and should have no other effect.
+    description: >
+      The GET method requests a representation of the specified resource.
+      Requests using GET should only retrieve data and should have no other
+      effect.
     _links:
       self:
         href: /design/topics/http-methods-get.yaml
@@ -332,8 +362,11 @@ items:
   - id: http-methods-head
     category: HTTP Methods
     name: HEAD
-    description: |
-      The HEAD method asks for a response identical to that of a GET request, but without the response body. This is useful for retrieving meta-information written in response headers, without having to transport the entire content.
+    description: >
+      The HEAD method asks for a response identical to that of a GET request,
+      but without the response body. This is useful for retrieving
+      meta-information written in response headers, without having to transport
+      the entire content.
     _links:
       self:
         href: /design/topics/http-methods-head.yaml
@@ -342,8 +375,13 @@ items:
   - id: http-methods-post
     category: HTTP Methods
     name: POST
-    description: |
-      The POST method requests that the server accept the entity enclosed in the request as a new subordinate of the web resource identified by the URI. The data POSTed might be, for example, an annotation for existing resources; a message for a bulletin board, newsgroup, mailing list, or comment thread; a block of data that is the result of submitting a web form to a data-handling process; or an item to add to a database.
+    description: >
+      The POST method requests that the server accept the entity enclosed in the
+      request as a new subordinate of the web resource identified by the URI.
+      The data POSTed might be, for example, an annotation for existing
+      resources; a message for a bulletin board, newsgroup, mailing list, or
+      comment thread; a block of data that is the result of submitting a web
+      form to a data-handling process; or an item to add to a database.
     _links:
       self:
         href: /design/topics/http-methods-post.yaml
@@ -407,8 +445,10 @@ items:
   - id: http-methods-options
     category: HTTP Methods
     name: OPTIONS
-    description: |
-      The OPTIONS method returns the HTTP methods that the server supports for the specified URL. This can be used to check the functionality of a web server by requesting '*' instead of a specific resource.
+    description: >
+      The OPTIONS method returns the HTTP methods that the server supports for
+      the specified URL. This can be used to check the functionality of a web
+      server by requesting '*' instead of a specific resource.
     _links:
       self:
         href: /design/topics/http-methods-options.yaml
@@ -489,7 +529,9 @@ items:
   - id: resource-multiple
     category: Resources
     name: Batch Bulk
-    description: How to handle batch/bulk processing/creation/update/... (e.g. handle multiple resources at conce)
+    description: >-
+      How to handle batch/bulk processing/creation/update/... (e.g. handle
+      multiple resources at conce)
     _links:
       self:
         href: /design/topics/resource-multiple.yaml
@@ -561,8 +603,12 @@ items:
   - id: http-status-302
     category: HTTP Status Redirection
     name: 302 Found
-    description: |
-      Common way of performing URL redirection. An HTTP response with this status code will additionally provide a URL in the location header field. The user agent (e.g. a web browser) is invited by a response with this code to make a second, otherwise identical, request to the new URL specified in the location field.
+    description: >
+      Common way of performing URL redirection. An HTTP response with this
+      status code will additionally provide a URL in the location header field.
+      The user agent (e.g. a web browser) is invited by a response with this
+      code to make a second, otherwise identical, request to the new URL
+      specified in the location field.
     _links:
       self:
         href: /design/topics/http-status-302.yaml
@@ -571,8 +617,11 @@ items:
   - id: http-status-303
     category: HTTP Status Redirection
     name: 303 See Other
-    description: |
-      The response to the request can be found under another URI using a GET method. When received in response to a POST (or PUT/DELETE), the client should presume that the server has received the data and should issue a redirect with a separate GET message.
+    description: >
+      The response to the request can be found under another URI using a GET
+      method. When received in response to a POST (or PUT/DELETE), the client
+      should presume that the server has received the data and should issue a
+      redirect with a separate GET message.
     _links:
       self:
         href: /design/topics/http-status-303.yaml
@@ -581,8 +630,10 @@ items:
   - id: http-status-400
     category: HTTP Status User Error
     name: 400 Bad Request
-    description: |
-      The server cannot or will not process the request due to an apparent client error (e.g., malformed request syntax, too large size, invalid request message framing, or deceptive request routing).
+    description: >
+      The server cannot or will not process the request due to an apparent
+      client error (e.g., malformed request syntax, too large size, invalid
+      request message framing, or deceptive request routing).
     _links:
       self:
         href: /design/topics/http-status-400.yaml
@@ -591,7 +642,10 @@ items:
   - id: http-status-403
     category: HTTP Status User Error
     name: 403 Forbidden
-    description: 'The request was a valid request, but the server is refusing to respond to it. The user might be logged in but does not have the necessary permissions for the resource.'
+    description: >-
+      The request was a valid request, but the server is refusing to respond to
+      it. The user might be logged in but does not have the necessary
+      permissions for the resource.
     _links:
       self:
         href: /design/topics/http-status-403.yaml
@@ -600,7 +654,9 @@ items:
   - id: http-status-422
     category: HTTP Status User Error
     name: 422 Unprocessable Entity
-    description: The request was well-formed but was unable to be followed due to semantic errors.
+    description: >-
+      The request was well-formed but was unable to be followed due to semantic
+      errors.
     _links:
       self:
         href: /design/topics/http-status-422.yaml
@@ -609,7 +665,9 @@ items:
   - id: http-status-500
     category: HTTP Status Server Error
     name: 500 Internal Server Error
-    description: 'A generic error message, given when an unexpected condition was encountered and no more specific message is suitable.'
+    description: >-
+      A generic error message, given when an unexpected condition was
+      encountered and no more specific message is suitable.
     _links:
       self:
         href: /design/topics/http-status-500.yaml
@@ -618,7 +676,9 @@ items:
   - id: http-status-503
     category: HTTP Status Server Error
     name: 503 Service Unavailable
-    description: 'The server is currently unavailable (because it is overloaded or down for maintenance). Generally, this is a temporary state.'
+    description: >-
+      The server is currently unavailable (because it is overloaded or down for
+      maintenance). Generally, this is a temporary state.
     _links:
       self:
         href: /design/topics/http-status-503.yaml
@@ -690,7 +750,9 @@ items:
   - id: http-status-406
     category: HTTP Status User Error
     name: 406 Not Acceptable
-    description: The requested resource is capable of generating only content not acceptable according to the Accept headers sent in the request.
+    description: >-
+      The requested resource is capable of generating only content not
+      acceptable according to the Accept headers sent in the request.
     _links:
       self:
         href: /design/topics/http-status-406.yaml
@@ -699,8 +761,11 @@ items:
   - id: http-status-408
     category: HTTP Status User Error
     name: 408 Request Timeout
-    description: |
-      The server timed out waiting for the request. According to HTTP specifications: The client did not produce a request within the time that the server was prepared to wait. The client MAY repeat the request without modifications at any later time.
+    description: >
+      The server timed out waiting for the request. According to HTTP
+      specifications: The client did not produce a request within the time that
+      the server was prepared to wait. The client MAY repeat the request without
+      modifications at any later time.
     _links:
       self:
         href: /design/topics/http-status-408.yaml
@@ -709,8 +774,10 @@ items:
   - id: http-status-409
     category: HTTP Status User Error
     name: 409 Conflict
-    description: |
-      Indicates that the request could not be processed because of conflict in the request, such as an edit conflict between multiple simultaneous updates.
+    description: >
+      Indicates that the request could not be processed because of conflict in
+      the request, such as an edit conflict between multiple simultaneous
+      updates.
     _links:
       self:
         href: /design/topics/http-status-409.yaml
@@ -719,8 +786,14 @@ items:
   - id: http-status-410
     category: HTTP Status User Error
     name: 410 Gone
-    description: |
-      Indicates that the resource requested is no longer available and will not be available again. This should be used when a resource has been intentionally removed and the resource should be purged. Upon receiving a 410 status code, the client should not request the resource in the future. Clients such as search engines should remove the resource from their indices. Most use cases do not require clients and search engines to purge the resource, and a *404 Not Found* may be used instead.
+    description: >
+      Indicates that the resource requested is no longer available and will not
+      be available again. This should be used when a resource has been
+      intentionally removed and the resource should be purged. Upon receiving a
+      410 status code, the client should not request the resource in the future.
+      Clients such as search engines should remove the resource from their
+      indices. Most use cases do not require clients and search engines to purge
+      the resource, and a *404 Not Found* may be used instead.
     _links:
       self:
         href: /design/topics/http-status-410.yaml
@@ -729,7 +802,9 @@ items:
   - id: http-status-411
     category: HTTP Status User Error
     name: 411 Length Required
-    description: 'The request did not specify the length of its content, which is required by the requested resource.'
+    description: >-
+      The request did not specify the length of its content, which is required
+      by the requested resource.
     _links:
       self:
         href: /design/topics/http-status-411.yaml
@@ -738,7 +813,10 @@ items:
   - id: http-status-415
     category: HTTP Status User Error
     name: 415 Unsupported Media Type
-    description: 'The request entity has a media type which the server or resource does not support. For example, the client uploads an image as image/svg+xml, but the server requires that images use a different format.'
+    description: >-
+      The request entity has a media type which the server or resource does not
+      support. For example, the client uploads an image as image/svg+xml, but
+      the server requires that images use a different format.
     _links:
       self:
         href: /design/topics/http-status-415.yaml
@@ -747,7 +825,10 @@ items:
   - id: http-status-501
     category: HTTP Status Server Error
     name: 501 Not Implemented
-    description: 'The server either does not recognize the request method, or it lacks the ability to fulfill the request. Usually this implies future availability (e.g., a new feature of a web-service API).'
+    description: >-
+      The server either does not recognize the request method, or it lacks the
+      ability to fulfill the request. Usually this implies future availability
+      (e.g., a new feature of a web-service API).
     _links:
       self:
         href: /design/topics/http-status-501.yaml
@@ -774,8 +855,11 @@ items:
   - id: http-status-206
     category: HTTP Status Success
     name: 206 Partial Content
-    description: |
-      The server is delivering only part of the resource (byte serving) due to a range header sent by the client. The range header is used by HTTP clients to enable resuming of interrupted downloads, or split a download into multiple simultaneous streams.
+    description: >
+      The server is delivering only part of the resource (byte serving) due to a
+      range header sent by the client. The range header is used by HTTP clients
+      to enable resuming of interrupted downloads, or split a download into
+      multiple simultaneous streams.
     _links:
       self:
         href: /design/topics/http-status-206.yaml
@@ -784,7 +868,9 @@ items:
   - id: http-status-429
     category: HTTP Status User Error
     name: 429 Too Many Requests
-    description: The user has sent too many requests in a given amount of time. Intended for use with rate-limiting schemes.
+    description: >-
+      The user has sent too many requests in a given amount of time. Intended
+      for use with rate-limiting schemes.
     _links:
       self:
         href: /design/topics/http-status-429.yaml
@@ -856,10 +942,15 @@ items:
   - id: http-status-428
     category: HTTP Status User Error
     name: 428 Precondition Required
-    description: |
+    description: >
       The origin server requires the request to be conditional.
-      Intended to prevent the *lost update* problem, where a client GETs a resource's state, modifies it,
-      and PUTs it back to the server, when meanwhile a third party has modified the state on the server,
+
+      Intended to prevent the *lost update* problem, where a client GETs a
+      resource's state, modifies it,
+
+      and PUTs it back to the server, when meanwhile a third party has modified
+      the state on the server,
+
       leading to a conflict.
     _links:
       self:
