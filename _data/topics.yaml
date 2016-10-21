@@ -1,7 +1,3 @@
-api-chaining:
-  category: Miscellaneous
-  name: API chaining
-  description: How to chain API call in internal systems
 api-counts:
   category: API Design
   name: API counts
@@ -286,6 +282,10 @@ rate-limiting:
   category: Miscellaneous
   name: Rate limiting
   description: How to provide information about how many calls a consumer can do
+api-chaining:
+  category: Miscellaneous
+  name: API chaining
+  description: How to chain API call in internal systems  
 resource-action:
   category: Resources
   name: Action resource
