@@ -42,6 +42,7 @@ title: My Github YAML Editor Micro Tool Base
           {
 
             $categories = {};
+            $categories.push("API Design");
             // If no error we have access, read YAML store
             repo.read('gh-pages', '_data/topics.yaml', function(err, data) {
               $yaml_store = jsyaml.load(data);
