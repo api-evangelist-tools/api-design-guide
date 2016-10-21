@@ -84,7 +84,7 @@ title: My Github YAML Editor Micro Tool Base
       function saveYAMLStore()
         {
           $('#editor tr').each(function (i, row) {
-              $type = row.type;
+              $type = row.title;
               $id = row.id;
               console.log("type: " + $type);
               if($type=='entry')
