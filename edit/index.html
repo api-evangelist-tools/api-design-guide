@@ -76,7 +76,7 @@ title: My Github YAML Editor Micro Tool Base
 
                 $.each($yaml_store, function($row, $rowEntry) {
 
-                  $topic_id = $row;
+                  $topic_id = $rowEntry.id;
                   $topic_category = $rowEntry.category;
                   $topic_name = $rowEntry.name;
                   $topic_description = $rowEntry.description;
