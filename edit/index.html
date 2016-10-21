@@ -94,9 +94,7 @@ title: My Github YAML Editor Micro Tool Base
                   $value = document.getElementById($id+'-value').value;
                   $yaml_store[$id]['value'] = $value;
                 }
-            });
-
-          });
+              });
 
           $yaml_dump = jsyaml.dump($yaml_store);
           console.log($yaml_dump);
