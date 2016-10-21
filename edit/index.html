@@ -56,11 +56,12 @@ title: My Github YAML Editor Micro Tool Base
                 });
             });
             $categories.sort();
-            console.log($categories);
+            //console.log($categories);
             // If no error we have access, read YAML store
             repo.read('gh-pages', '_data/topics.yaml', function(err, data) {
 
-              $yaml_store = jsyaml.load(data);
+              $yaml_store_load = jsyaml.load(data);
+              $yaml_store = $yaml_store_load.items;
 
               $( "#editor" ).append( "<tr><td colspan='2'><hr style='padding: 0px; margin: 0px;'></td></tr>");
 
@@ -72,6 +73,7 @@ title: My Github YAML Editor Micro Tool Base
 
                 $.each($yaml_store, function($rowKey, $rowEntry) {
 
+                  $rowKey = $rowEntry.id;
                   $topic_category = $rowEntry.category;
                   $topic_name = $rowEntry.name;
                   $topic_description = $rowEntry.description;
