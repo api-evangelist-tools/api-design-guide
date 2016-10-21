@@ -135,15 +135,17 @@ title: My Github YAML Editor Micro Tool Base
               $sha = treeValue['sha'];
 
               //console.log($path + ' == ' + $writepath);
+              $write = 0;
               if($path==$writepath)
                 {
                 repo.writemanual('gh-pages',$writepath, $yaml_dump, 'Save', $sha, function(err) { });
                 //console.log("writing " + $writepath);
                 alert("The topics.yaml was save in the _data folder for this repo.")
+                $write = 1;
                 }
               });
             });
-
+            console.log($write);
         }
 
 </script>
