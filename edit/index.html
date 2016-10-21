@@ -60,13 +60,13 @@ title: My Github YAML Editor Micro Tool Base
 
                 if($displayCategory != $topic_category)
                   {
-                  $( "#editor" ).append( "<tr id='" + $rowKey + "-title' style='padding: 3px 0px 3px 0px;'><td align='left' colspan='2' style='font-weight: bold; font-size: 20px;'>" + $topic_category + "</td></tr>" );
+                  $( "#editor" ).append( "<tr title='category' style='padding: 3px 0px 3px 0px;'><td align='left' colspan='2' style='font-weight: bold; font-size: 20px;'>" + $topic_category + "</td></tr>" );
                   $displayCategory = $rowEntry.category;
                   }
 
-                $( "#editor" ).append( "<tr style='padding: 3px 0px 3px 0px;'><td align='right' style='width: 30%; font-size: 14px;'>" + $topic_name + ":</td><td><textarea name='" + $topic_name + "' id='" + $rowKey + "' style='width: 100%; height: 50px;'></textarea></td></tr>" );
+                $( "#editor" ).append( "<tr id='" + $rowKey + "' title='entry' style='padding: 3px 0px 3px 0px;'><td align='right' style='width: 30%; font-size: 14px;'>" + $topic_name + ":</td><td><textarea name='" + $topic_name + "' id='" + $rowKey + "-value' style='width: 100%; height: 50px;'></textarea></td></tr>" );
 
-                $( "#editor" ).append( "<tr><td colspan='2'><hr style='padding: 0px; margin: 0px;'></td></tr>");
+                $( "#editor" ).append( "<tr title='line'><td colspan='2'><hr style='padding: 0px; margin: 0px;'></td></tr>");
 
               });
             });
@@ -84,42 +84,22 @@ title: My Github YAML Editor Micro Tool Base
       function saveYAMLStore()
         {
           $('#editor tr').each(function (i, row) {
-            $('#row-' + i + ' td').each(function (j, cell) {
-              $id = 'text-' + i + '-' + j;
-              if(document.getElementById($id))
+              $type = row.type;
+              $id = row.id;
+              console.log("type: " + $type);
+              if($type=='entry')
                 {
-                  $name = document.getElementById($id).name
-                  $value = document.getElementById($id).value;
-                  $yaml_store[i][$name] = $value;
+                  console.log("id: " + $id);
+                  $name = document.getElementById($id).dname
+                  $value = document.getElementById($id+'-value').value;
+                  $yaml_store[$id]['value'] = $value;
                 }
             });
 
           });
 
           $yaml_dump = jsyaml.dump($yaml_store);
-
-          // Grab the token from cookie
-          $oAuthToken = Cookies.get('token');
-
-          var github = new Github({token: $oAuthToken,auth: "oauth"});
-          var repo = github.getRepo($org,$repo);
-
-          repo.getTree('gh-pages?recursive=true', function(err, tree) {
-
-            $.each(tree, function(treeKey, treeValue) {
-
-              $writepath = '_data/topics.yaml';
-              $path = treeValue['path'];
-              $sha = treeValue['sha'];
-              //console.log($path + ' == ' + $writepath);
-              if($path==$writepath)
-                {
-                repo.writemanual('gh-pages',$writepath, $yaml_dump, 'Save', $sha, function(err) { });
-                //console.log("writing " + $writepath);
-                alert("saved " + $writepath);
-                }
-              });
-            });
+          console.log($yaml_dump);
 
         }
 
