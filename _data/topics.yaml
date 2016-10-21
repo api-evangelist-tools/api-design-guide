@@ -915,7 +915,7 @@ items:
         href: /design/topics/http-status-501.yaml
       topicGuidelines:
         href: /design/topics/http-status-501/guidelines.yaml
-    value: ''
+    value: test
   - id: resource-state
     category: Resources
     name: Resource's state
