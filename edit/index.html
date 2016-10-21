@@ -81,6 +81,7 @@ title: My Github YAML Editor Micro Tool Base
 
                   if($topic_category == $category)
                     {
+                    console.log($row);  
                     $( "#editor" ).append( "<tr id='" + $topic_id + "' title='entry' style='padding: 3px 0px 3px 0px;'><td align='left' style='width: 30%; font-size: 14px; padding-left: 20px;'><a href='http://apistylebook.com/design/topics/" + $topic_id + "' target='_blank'>" + $topic_name + "</a>: " + $topic_description + " (<a href='http://apistylebook.com/design/topics/" + $topic_id + "' target='_blank'>details</a>)</td></tr><tr><td align='center'><textarea name='" + $row + "' id='" + $topic_id + "-value' style='width: 90%; height: 50px;'></textarea></td></tr>" );
                     $( "#editor" ).append( "<tr title='line'><td align='center'><hr style='padding: 0px; margin: 0px;'></td></tr>");
                     }
