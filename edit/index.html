@@ -103,6 +103,8 @@ title: My Github YAML Editor Micro Tool Base
           $('#editor tr').each(function (i, row) {
               $type = row.title;
               $id = row.id;
+              console.log($type);
+              console.log($id);
               if($type=='entry')
                 {
                   $name = document.getElementById($id).name
