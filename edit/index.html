@@ -61,6 +61,7 @@ title: My Github YAML Editor Micro Tool Base
             repo.read('gh-pages', '_data/topics.yaml', function(err, data) {
 
               $yaml_store = jsyaml.load(data);
+              $yaml_store = $yaml_store.items;
               console.log($yaml_store);
 
               $( "#editor" ).append( "<tr><td colspan='2'><hr style='padding: 0px; margin: 0px;'></td></tr>");
