@@ -75,7 +75,7 @@ title: My Github YAML Editor Micro Tool Base
                 $( "#editor" ).append( "<tr title='category' style='padding: 3px 0px 3px 0px;'><td align='left' colspan='2' style='font-weight: bold; font-size: 20px;'>" + $category + "</td></tr>" );
 
                 $.each($yaml_store, function($row, $rowEntry) {
-
+                  console.log($row);
                   $topic_id = $rowEntry.id;
                   $topic_category = $rowEntry.category;
                   $topic_name = $rowEntry.name;
