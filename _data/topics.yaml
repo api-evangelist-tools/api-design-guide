@@ -1,376 +1,882 @@
-api-counts:
-  category: API Design
-  name: API counts
-  description: How many endpoints/resources in an API?
-asynchronicity:
-  category: Asynchronicity
-  name: Asynchronicity
-  description: How to handle long operations
-collection-filtering:
-  category: Collection Resources
-  name: Filtering
-  description: How to select some resources in a collection
-collection-pagination:
-  category: Collection Resources
-  name: Pagination
-  description: How to retrieve a range of resources in a collection
-collection-retrieve:
-  category: Collection Resources
-  name: Retrieve a collection
-  description: How to get a collection or resources
-collection-sorting:
-  category: Collection Resources
-  name: Sorting a collection
-  description: How to sort a collection of resources
-collection:
-  category: Collection Resources
-  name: Collection
-  description: What is a collection (set) of resources
-cors:
-  category: Miscellaneous
-  name: CORS
-  description: How to deal with CORS
-data-standards:
-  category: Data
-  name: Standards data
-  description: Which standard use for values like languages, countries, currencies, ...
-data-format-date-time:
-  category: Data
-  name: Date and Time
-  description: How to deal with date and time data
-data-format-null:
-  category: Data
-  name: Null data
-  description: How to deal with null data
-data-format:
-  category: Data
-  name: Data format
-  description: which data format use
-debug-diagnose:
-  category: Miscellaneous
-  name: Debug and diagnose
-  description: How to provide informations to debug and diagnose
-developer-experience:
-  category: Miscellaneous
-  name: Developer experience
-  description: How to take care of developer experience (DX)
-documentation:
-  category: Miscellaneous
-  name: Documentation
-  description: How to produce and/or propose API documentation
-errors:
-  category: Error handling
-  name: Errors
-  description: How to handle errors
-global-design:
-  category: API Design
-  name: Global design
-  description: General considerations on API design
-guiding-input:
-  category: Miscellaneous
-  name: Guiding inputs
-  description: How to help consumers or end user to input relevant data
-governance:
-  category: API Lifecycle
-  name: Governance
-  description: How to ensure API governance (advertise, consistency, ...)
-http-caching:
-  category: HTTP Protocol
-  name: Caching
-  description: How to use and provide relevant caching informations
-http-content-negotiation:
-  category: HTTP Protocol
-  name: Content negociation and media types
-  description: How to describe your API data format and/or propose different formats (like json, yaml, xml atom, ...)
-http-headers:
-  category: HTTP Protocol
-  name: HTTP Headers
-  description: How to use standard or custom HTTP headers
-http-status-200:
-  category: HTTP Status
-  name: HTTP Status 200
-  description: When to use HTTP status 200
-http-status-201:
-  category: HTTP Status
-  name: HTTP Status 201
-  description: When to use HTTP status 201
-http-status-202:
-  category: HTTP Status
-  name: HTTP Status 202
-  description: When to use HTTP status 202
-http-status-204:
-  category: HTTP Status
-  name: HTTP Status 204
-  description: When to use HTTP status 204
-http-status-206:
-  category: HTTP Status
-  name: HTTP Status 206
-  description: When to use HTTP status 206
-http-status-301:
-  category: HTTP Status
-  name: HTTP Status 301
-  description: When to use HTTP status 301
-http-status-302:
-  category: HTTP Status
-  name: HTTP Status 302
-  description: When to use HTTP status 302
-http-status-303:
-  category: HTTP Status
-  name: HTTP Status 303
-  description: When to use HTTP status 303
-http-status-304:
-  category: HTTP Status
-  name: HTTP Status 304
-  description: When to use HTTP status 304
-http-status-400:
-  category: HTTP Status
-  name: HTTP Status 400
-  description: When to use HTTP status 400
-http-status-401:
-  category: HTTP Status
-  name: HTTP Status 401
-  description: When to use HTTP status 401
-http-status-403:
-  category: HTTP Status
-  name: HTTP Status 403
-  description: When to use HTTP status 403
-http-status-404:
-  category: HTTP Status
-  name: HTTP Status 404
-  description: When to use HTTP status 404
-http-status-405:
-  category: HTTP Status
-  name: HTTP Status 405
-  description: When to use HTTP status 405
-http-status-406:
-  category: HTTP Status
-  name: HTTP Status 406
-  description: When to use HTTP status 406
-http-status-408:
-  category: HTTP Status
-  name: HTTP Status 408
-  description: When to use HTTP status 408
-http-status-409:
-  category: HTTP Status
-  name: HTTP Status 409
-  description: When to use HTTP status 409
-http-status-411:
-  category: HTTP Status
-  name: HTTP Status 411
-  description: When to use HTTP status 411
-http-status-412:
-  category: HTTP Status
-  name: HTTP Status 412
-  description: When to use HTTP status 412
-http-status-415:
-  category: HTTP Status
-  name: HTTP Status 415
-  description: When to use HTTP status 415
-http-status-422:
-  category: HTTP Status
-  name: HTTP Status 422
-  description: When to use HTTP status 422
-http-status-423:
-  category: HTTP Status
-  name: HTTP Status 423
-  description: When to use HTTP status 423
-http-status-428:
-  category: HTTP Status
-  name: HTTP Status 428
-  description: When to use HTTP status 428
-http-status-429:
-  category: HTTP Status
-  name: HTTP Status 429
-  description: When to use HTTP status 429
-http-status-500:
-  category: HTTP Status
-  name: HTTP Status 500
-  description: When to use HTTP status 500
-http-status-501:
-  category: HTTP Status
-  name: HTTP Status 501
-  description: When to use HTTP status 501
-http-status-503:
-  category: HTTP Status
-  name: HTTP Status 503
-  description: When to use HTTP status 503
-http-status-standard-error:
-  category: Error handling
-  name: Error format
-  description: How to provide information about errors
-http-status:
-  category: HTTP Status
-  name: HTTP Statuses
-  description: General information about HTTP statuses usage
-http-methods-alternative:
-  category: HTTP Methods
-  name: Forbidden methods alternatives
-  description: What to do when only possible HTTP methods are POST and GET
-http-methods-delete:
-  category: HTTP Methods
-  name: DELETE
-  description: When to use HTTP method DELETE
-http-methods-get:
-  category: HTTP Methods
-  name: GET
-  description: When to use HTTP method GET
-http-methods-head:
-  category: HTTP Methods
-  name: HEAD
-  description: When to use HTTP method HEAD
-http-methods-options:
-  category: HTTP Methods
-  name: OPTIONS
-  description: When to use HTTP method OPTION
-http-methods-patch:
-  category: HTTP Methods
-  name: PATCH
-  description: When to use HTTP method PATCH
-http-methods-post:
-  category: HTTP Methods
-  name: POST
-  description: When to use HTTP method POST
-http-methods-put:
-  category: HTTP Methods
-  name: PUT
-  description: When to use HTTP method PUT
-http-methods:
-  category: HTTP Methods
-  name: HTTP methods
-  description: General information about HTTP methods usage
-http:
-  category: HTTP Protocol
-  name: HTTP protocol
-  description: General informations about HTTP protocol
-hypermedia-read:
-  category: Hypermedia
-  name: Hypermedia (read)
-  description: How to use hypermedia to read data
-hypermedia-write:
-  category: Hypermedia
-  name: Hypermedia (write)
-  description: How to use hypermedia to write data
-hypermedia:
-  category: Hypermedia
-  name: Hypermedia
-  description: How to use hypermedia
-naming-language:
-  category: Naming
-  name: Language
-  description: Which language(s) use when designing an API
-naming-case:
-  category: Naming
-  name: Case
-  description: Which case (lowercase, camelCase, ...) to use and when
-naming:
-  category: Naming
-  name: Naming
-  description: How to name things
-notifications-server-events:
-  category: Asynchronicity
-  name: Notifying API consumers
-  description: How to send events or notifications to API consumers
-query-parameter:
-  category: Miscellaneous
-  name: Query parameters
-  description: How to use query parameters
-performance:
-  category: Miscellaneous
-  name: Performance and bandwidth
-  description: How to deal with high traffic or consumers with low bandwith
-rate-limiting:
-  category: Miscellaneous
-  name: Rate limiting
-  description: How to provide information about how many calls a consumer can do
-api-chaining:
-  category: Miscellaneous
-  name: API chaining
-  description: How to chain API call in internal systems  
-resource-action:
-  category: Resources
-  name: Action resource
-  description: How to use action resource (e.g. resources like /cancel or /approve)
-resource-change-tracking:
-  category: Resources
-  name: Track change
-  description: How to track change on resources
-resource-creation-with-id:
-  category: Resources
-  name: Create resource with a specific ID
-  description: How to create resource with a provided id
-resource-creation:
-  category: Resources
-  name: Create resource
-  description: How to create resources
-resource-deletion:
-  category: Resources
-  name: Delete resource
-  description: How to delete resources
-resource-id-semantic:
-  category: Resources
-  name: ID with semantic
-  description: Using meaningful ids (like `me`)
-resource-id:
-  category: Resources
-  name: Resource ID
-  description: What is a resource ID and/or how it's built
-resource-multiple:
-  category: Resources
-  name: Batch Bulk
-  description: How to handle batch/bulk processing/creation/update/... (e.g. handle multiple resources at conce)
-resource-relationships:
-  category: Resources
-  name: Relationships
-  description: How to define and use relations between resources
-resource-replacement:
-  category: Resources
-  name: Replace resource
-  description: How to replace (or update fully) a resource
-resource-retrieve-dereference:
-  category: Resources
-  name: Dereference Relationships
-  description: How to load a resource and its linked resources in one call
-resource-retrieve-partial:
-  category: Resources
-  name: Retrieve resource partially
-  description: How to retrieve partially a resource
-resource-retrieve:
-  category: Resources
-  name: Retrieve resource
-  description: How to retrieve a resource
-resource-state:
-  category: Resources
-  name: Resource's state
-  description: How to change a resource's state/status (like processed/sent/paid/...)
-resource-update-partial:
-  category: Resources
-  name: Update resource partially
-  description: How to udate partially a resource
-resource-update:
-  category: Resources
-  name: Update resource
-  description: How to update a resource
-resource-url-format:
-  category: Resources
-  name: URL format
-  description: How to design URLs
-resource:
-  category: Resources
-  name: Resource
-  description: General informations about resources
-security:
-  category: Security
-  name: Security
-  description: Security concerns
-security-data:
-  category: Security
-  name: Data privacy
-  description: Data privacy concerns
-undo:
-  category: Miscellaneous
-  name: Undo
-  description: How to undo things
-versioning:
-  category: API Lifecycle
-  name: Versionning
-  description: How to handle API versionning
+items:
+  - id: collection-pagination
+    category: Collection Resources
+    name: Pagination
+    description: How to retrieve a range of resources in a collection
+    _links:
+      self:
+        href: /design/topics/collection-pagination.yaml
+      topicGuidelines:
+        href: /design/topics/collection-pagination/guidelines.yaml
+  - id: collection
+    category: Collection Resources
+    name: Collection
+    description: What is a collection (set) of resources
+    _links:
+      self:
+        href: /design/topics/collection.yaml
+      topicGuidelines:
+        href: /design/topics/collection/guidelines.yaml
+  - id: data-format
+    category: Data
+    name: Data format
+    description: which data format use
+    _links:
+      self:
+        href: /design/topics/data-format.yaml
+      topicGuidelines:
+        href: /design/topics/data-format/guidelines.yaml
+  - id: governance
+    category: API Lifecycle
+    name: Governance
+    description: 'How to ensure API governance (advertise, consistency, ...)'
+    _links:
+      self:
+        href: /design/topics/governance.yaml
+      topicGuidelines:
+        href: /design/topics/governance/guidelines.yaml
+  - id: http-caching
+    category: HTTP Protocol
+    name: Caching
+    description: How to use and provide relevant caching informations
+    _links:
+      self:
+        href: /design/topics/http-caching.yaml
+      topicGuidelines:
+        href: /design/topics/http-caching/guidelines.yaml
+  - id: http-headers
+    category: HTTP Protocol
+    name: HTTP Headers
+    description: How to use standard or custom HTTP headers
+    _links:
+      self:
+        href: /design/topics/http-headers.yaml
+      topicGuidelines:
+        href: /design/topics/http-headers/guidelines.yaml
+  - id: http-status-200
+    category: HTTP Status Success
+    name: 200 OK
+    description: 'Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request, the response will contain an entity describing or containing the result of the action.'
+    _links:
+      self:
+        href: /design/topics/http-status-200.yaml
+      topicGuidelines:
+        href: /design/topics/http-status-200/guidelines.yaml
+  - id: http-status-201
+    category: HTTP Status Success
+    name: 201 Created
+    description: 'The request has been fulfilled, resulting in the creation of a new resource.'
+    _links:
+      self:
+        href: /design/topics/http-status-201.yaml
+      topicGuidelines:
+        href: /design/topics/http-status-201/guidelines.yaml
+  - id: http-status-202
+    category: HTTP Status Success
+    name: 202 Accepted
+    description: |
+      The request has been accepted for processing, but the processing has not been completed. The request might or might not be eventually acted upon, and may be disallowed when processing occurs.
+    _links:
+      self:
+        href: /design/topics/http-status-202.yaml
+      topicGuidelines:
+        href: /design/topics/http-status-202/guidelines.yaml
+  - id: http-status-204
+    category: HTTP Status Success
+    name: 204 No Content
+    description: The server successfully processed the request and is not returning any content.
+    _links:
+      self:
+        href: /design/topics/http-status-204.yaml
+      topicGuidelines:
+        href: /design/topics/http-status-204/guidelines.yaml
+  - id: http-status-301
+    category: HTTP Status Redirection
+    name: 301 Moved Permanently
+    description: This and all future requests should be directed to the given URI.
+    _links:
+      self:
+        href: /design/topics/http-status-301.yaml
+      topicGuidelines:
+        href: /design/topics/http-status-301/guidelines.yaml
+  - id: http-status-304
+    category: HTTP Status Redirection
+    name: 304 Not Modified
+    description: |
+      Indicates that the resource has not been modified since the version specified by the request headers If-Modified-Since or If-None-Match. In such case, there is no need to retransmit the resource since the client still has a previously-downloaded copy.
+    _links:
+      self:
+        href: /design/topics/http-status-304.yaml
+      topicGuidelines:
+        href: /design/topics/http-status-304/guidelines.yaml
+  - id: http-status-401
+    category: HTTP Status User Error
+    name: 401 Unauthorized
+    description: |
+      Similar to 403 Forbidden, but specifically for use when authentication is required and has failed or has not yet been provided. The response must include a WWW-Authenticate header field containing a challenge applicable to the requested resource.
+    _links:
+      self:
+        href: /design/topics/http-status-401.yaml
+      topicGuidelines:
+        href: /design/topics/http-status-401/guidelines.yaml
+  - id: http-status-404
+    category: HTTP Status User Error
+    name: 404 Not Found
+    description: The requested resource could not be found but may be available in the future. Subsequent requests by the client are permissible.
+    _links:
+      self:
+        href: /design/topics/http-status-404.yaml
+      topicGuidelines:
+        href: /design/topics/http-status-404/guidelines.yaml
+  - id: http-status-412
+    category: HTTP Status User Error
+    name: 412 Precondition Failed
+    description: The server does not meet one of the preconditions that the requester put on the request.
+    _links:
+      self:
+        href: /design/topics/http-status-412.yaml
+      topicGuidelines:
+        href: /design/topics/http-status-412/guidelines.yaml
+  - id: http-status
+    category: HTTP Protocol
+    name: HTTP Statuses
+    description: General information about HTTP statuses usage
+    _links:
+      self:
+        href: /design/topics/http-status.yaml
+      topicGuidelines:
+        href: /design/topics/http-status/guidelines.yaml
+  - id: http-methods-delete
+    category: HTTP Methods
+    name: DELETE
+    description: The DELETE method deletes the specified resource.
+    _links:
+      self:
+        href: /design/topics/http-methods-delete.yaml
+      topicGuidelines:
+        href: /design/topics/http-methods-delete/guidelines.yaml
+  - id: http-methods-put
+    category: HTTP Methods
+    name: PUT
+    description: |
+      The PUT method requests that the enclosed entity be stored under the supplied URI. If the URI refers to an already existing resource, it is modified; if the URI does not point to an existing resource, then the server can create the resource with that URI.
+    _links:
+      self:
+        href: /design/topics/http-methods-put.yaml
+      topicGuidelines:
+        href: /design/topics/http-methods-put/guidelines.yaml
+  - id: hypermedia-read
+    category: Hypermedia
+    name: Hypermedia (read)
+    description: How to use hypermedia to read data
+    _links:
+      self:
+        href: /design/topics/hypermedia-read.yaml
+      topicGuidelines:
+        href: /design/topics/hypermedia-read/guidelines.yaml
+  - id: hypermedia-write
+    category: Hypermedia
+    name: Hypermedia (write)
+    description: How to use hypermedia to write data
+    _links:
+      self:
+        href: /design/topics/hypermedia-write.yaml
+      topicGuidelines:
+        href: /design/topics/hypermedia-write/guidelines.yaml
+  - id: hypermedia
+    category: Hypermedia
+    name: Hypermedia
+    description: How to use hypermedia
+    _links:
+      self:
+        href: /design/topics/hypermedia.yaml
+      topicGuidelines:
+        href: /design/topics/hypermedia/guidelines.yaml
+  - id: resource-deletion
+    category: Resources
+    name: Delete resource
+    description: How to delete resources
+    _links:
+      self:
+        href: /design/topics/resource-deletion.yaml
+      topicGuidelines:
+        href: /design/topics/resource-deletion/guidelines.yaml
+  - id: resource-retrieve-dereference
+    category: Resources
+    name: Dereference Relationships
+    description: How to load a resource and its linked resources in one call
+    _links:
+      self:
+        href: /design/topics/resource-retrieve-dereference.yaml
+      topicGuidelines:
+        href: /design/topics/resource-retrieve-dereference/guidelines.yaml
+  - id: resource-update
+    category: Resources
+    name: Update resource
+    description: How to update a resource
+    _links:
+      self:
+        href: /design/topics/resource-update.yaml
+      topicGuidelines:
+        href: /design/topics/resource-update/guidelines.yaml
+  - id: resource-url-format
+    category: Resources
+    name: URL format
+    description: How to design URLs
+    _links:
+      self:
+        href: /design/topics/resource-url-format.yaml
+      topicGuidelines:
+        href: /design/topics/resource-url-format/guidelines.yaml
+  - id: resource
+    category: Resources
+    name: Resource
+    description: General informations about resources
+    _links:
+      self:
+        href: /design/topics/resource.yaml
+      topicGuidelines:
+        href: /design/topics/resource/guidelines.yaml
+  - id: security
+    category: Security
+    name: Security
+    description: Security concerns
+    _links:
+      self:
+        href: /design/topics/security.yaml
+      topicGuidelines:
+        href: /design/topics/security/guidelines.yaml
+  - id: versioning
+    category: API Lifecycle
+    name: Versionning
+    description: How to handle API versionning
+    _links:
+      self:
+        href: /design/topics/versioning.yaml
+      topicGuidelines:
+        href: /design/topics/versioning/guidelines.yaml
+  - id: developer-experience
+    category: Miscellaneous
+    name: Developer experience
+    description: How to take care of developer experience (DX)
+    _links:
+      self:
+        href: /design/topics/developer-experience.yaml
+      topicGuidelines:
+        href: /design/topics/developer-experience/guidelines.yaml
+  - id: rate-limiting
+    category: Miscellaneous
+    name: Rate limiting
+    description: How to provide information about how many calls a consumer can do
+    _links:
+      self:
+        href: /design/topics/rate-limiting.yaml
+      topicGuidelines:
+        href: /design/topics/rate-limiting/guidelines.yaml
+  - id: cors
+    category: Miscellaneous
+    name: CORS
+    description: How to deal with CORS
+    _links:
+      self:
+        href: /design/topics/cors.yaml
+      topicGuidelines:
+        href: /design/topics/cors/guidelines.yaml
+  - id: documentation
+    category: Miscellaneous
+    name: Documentation
+    description: How to produce and/or propose API documentation
+    _links:
+      self:
+        href: /design/topics/documentation.yaml
+      topicGuidelines:
+        href: /design/topics/documentation/guidelines.yaml
+  - id: http-content-negotiation
+    category: HTTP Protocol
+    name: Content negociation and media types
+    description: 'How to describe your API data format and/or propose different formats (like json, yaml, xml atom, ...)'
+    _links:
+      self:
+        href: /design/topics/http-content-negotiation.yaml
+      topicGuidelines:
+        href: /design/topics/http-content-negotiation/guidelines.yaml
+  - id: http-status-405
+    category: HTTP Status User Error
+    name: 405 Method Not Allowed
+    description: |
+      A request method is not supported for the requested resource; for example, a GET request on a form which requires data to be presented via POST, or a PUT request on a read-only resource.
+    _links:
+      self:
+        href: /design/topics/http-status-405.yaml
+      topicGuidelines:
+        href: /design/topics/http-status-405/guidelines.yaml
+  - id: http-status-standard-error
+    category: Error handling
+    name: Error format
+    description: How to provide information about errors
+    _links:
+      self:
+        href: /design/topics/http-status-standard-error.yaml
+      topicGuidelines:
+        href: /design/topics/http-status-standard-error/guidelines.yaml
+  - id: http-methods-get
+    category: HTTP Methods
+    name: GET
+    description: |
+      The GET method requests a representation of the specified resource. Requests using GET should only retrieve data and should have no other effect.
+    _links:
+      self:
+        href: /design/topics/http-methods-get.yaml
+      topicGuidelines:
+        href: /design/topics/http-methods-get/guidelines.yaml
+  - id: http-methods-head
+    category: HTTP Methods
+    name: HEAD
+    description: |
+      The HEAD method asks for a response identical to that of a GET request, but without the response body. This is useful for retrieving meta-information written in response headers, without having to transport the entire content.
+    _links:
+      self:
+        href: /design/topics/http-methods-head.yaml
+      topicGuidelines:
+        href: /design/topics/http-methods-head/guidelines.yaml
+  - id: http-methods-post
+    category: HTTP Methods
+    name: POST
+    description: |
+      The POST method requests that the server accept the entity enclosed in the request as a new subordinate of the web resource identified by the URI. The data POSTed might be, for example, an annotation for existing resources; a message for a bulletin board, newsgroup, mailing list, or comment thread; a block of data that is the result of submitting a web form to a data-handling process; or an item to add to a database.
+    _links:
+      self:
+        href: /design/topics/http-methods-post.yaml
+      topicGuidelines:
+        href: /design/topics/http-methods-post/guidelines.yaml
+  - id: http-methods
+    category: HTTP Methods
+    name: HTTP methods
+    description: General information about HTTP methods usage
+    _links:
+      self:
+        href: /design/topics/http-methods.yaml
+      topicGuidelines:
+        href: /design/topics/http-methods/guidelines.yaml
+  - id: global-design
+    category: API Design
+    name: Global design
+    description: General considerations on API design
+    _links:
+      self:
+        href: /design/topics/global-design.yaml
+      topicGuidelines:
+        href: /design/topics/global-design/guidelines.yaml
+  - id: resource-relationships
+    category: Resources
+    name: Relationships
+    description: How to define and use relations between resources
+    _links:
+      self:
+        href: /design/topics/resource-relationships.yaml
+      topicGuidelines:
+        href: /design/topics/resource-relationships/guidelines.yaml
+  - id: security-data
+    category: Security
+    name: Data privacy
+    description: Data privacy concerns
+    _links:
+      self:
+        href: /design/topics/security-data.yaml
+      topicGuidelines:
+        href: /design/topics/security-data/guidelines.yaml
+  - id: api-chaining
+    category: Miscellaneous
+    name: API chaining
+    description: How to chain API call in internal systems
+    _links:
+      self:
+        href: /design/topics/api-chaining.yaml
+      topicGuidelines:
+        href: /design/topics/api-chaining/guidelines.yaml
+  - id: http-methods-patch
+    category: HTTP Methods
+    name: PATCH
+    description: |
+      The PATCH method applies partial modifications to a resource.
+    _links:
+      self:
+        href: /design/topics/http-methods-patch.yaml
+      topicGuidelines:
+        href: /design/topics/http-methods-patch/guidelines.yaml
+  - id: http-methods-options
+    category: HTTP Methods
+    name: OPTIONS
+    description: |
+      The OPTIONS method returns the HTTP methods that the server supports for the specified URL. This can be used to check the functionality of a web server by requesting '*' instead of a specific resource.
+    _links:
+      self:
+        href: /design/topics/http-methods-options.yaml
+      topicGuidelines:
+        href: /design/topics/http-methods-options/guidelines.yaml
+  - id: http-methods-alternative
+    category: HTTP Methods
+    name: Forbidden methods alternatives
+    description: What to do when only possible HTTP methods are POST and GET
+    _links:
+      self:
+        href: /design/topics/http-methods-alternative.yaml
+      topicGuidelines:
+        href: /design/topics/http-methods-alternative/guidelines.yaml
+  - id: resource-id-semantic
+    category: Resources
+    name: ID with semantic
+    description: Using meaningful ids (like `me`)
+    _links:
+      self:
+        href: /design/topics/resource-id-semantic.yaml
+      topicGuidelines:
+        href: /design/topics/resource-id-semantic/guidelines.yaml
+  - id: resource-retrieve
+    category: Resources
+    name: Retrieve resource
+    description: How to retrieve a resource
+    _links:
+      self:
+        href: /design/topics/resource-retrieve.yaml
+      topicGuidelines:
+        href: /design/topics/resource-retrieve/guidelines.yaml
+  - id: resource-retrieve-partial
+    category: Resources
+    name: Retrieve resource partially
+    description: How to retrieve partially a resource
+    _links:
+      self:
+        href: /design/topics/resource-retrieve-partial.yaml
+      topicGuidelines:
+        href: /design/topics/resource-retrieve-partial/guidelines.yaml
+  - id: resource-creation
+    category: Resources
+    name: Create resource
+    description: How to create resources
+    _links:
+      self:
+        href: /design/topics/resource-creation.yaml
+      topicGuidelines:
+        href: /design/topics/resource-creation/guidelines.yaml
+  - id: resource-creation-with-id
+    category: Resources
+    name: Create resource with a specific ID
+    description: How to create resource with a provided id
+    _links:
+      self:
+        href: /design/topics/resource-creation-with-id.yaml
+      topicGuidelines:
+        href: /design/topics/resource-creation-with-id/guidelines.yaml
+  - id: resource-replacement
+    category: Resources
+    name: Replace resource
+    description: How to replace (or update fully) a resource
+    _links:
+      self:
+        href: /design/topics/resource-replacement.yaml
+      topicGuidelines:
+        href: /design/topics/resource-replacement/guidelines.yaml
+  - id: resource-update-partial
+    category: Resources
+    name: Update resource partially
+    description: How to udate partially a resource
+    _links:
+      self:
+        href: /design/topics/resource-update-partial.yaml
+      topicGuidelines:
+        href: /design/topics/resource-update-partial/guidelines.yaml
+  - id: resource-multiple
+    category: Resources
+    name: Batch Bulk
+    description: How to handle batch/bulk processing/creation/update/... (e.g. handle multiple resources at conce)
+    _links:
+      self:
+        href: /design/topics/resource-multiple.yaml
+      topicGuidelines:
+        href: /design/topics/resource-multiple/guidelines.yaml
+  - id: resource-action
+    category: Resources
+    name: Action resource
+    description: How to use action resource (e.g. resources like /cancel or /approve)
+    _links:
+      self:
+        href: /design/topics/resource-action.yaml
+      topicGuidelines:
+        href: /design/topics/resource-action/guidelines.yaml
+  - id: collection-filtering
+    category: Collection Resources
+    name: Filtering
+    description: How to select some resources in a collection
+    _links:
+      self:
+        href: /design/topics/collection-filtering.yaml
+      topicGuidelines:
+        href: /design/topics/collection-filtering/guidelines.yaml
+  - id: naming
+    category: Naming
+    name: Naming
+    description: How to name things
+    _links:
+      self:
+        href: /design/topics/naming.yaml
+      topicGuidelines:
+        href: /design/topics/naming/guidelines.yaml
+  - id: naming-case
+    category: Naming
+    name: Case
+    description: 'Which case (lowercase, camelCase, ...) to use and when'
+    _links:
+      self:
+        href: /design/topics/naming-case.yaml
+      topicGuidelines:
+        href: /design/topics/naming-case/guidelines.yaml
+  - id: data-format-date-time
+    category: Data
+    name: Date and Time
+    description: How to deal with date and time data
+    _links:
+      self:
+        href: /design/topics/data-format-date-time.yaml
+      topicGuidelines:
+        href: /design/topics/data-format-date-time/guidelines.yaml
+  - id: data-format-null
+    category: Data
+    name: Null data
+    description: How to deal with null data
+    _links:
+      self:
+        href: /design/topics/data-format-null.yaml
+      topicGuidelines:
+        href: /design/topics/data-format-null/guidelines.yaml
+  - id: undo
+    category: Miscellaneous
+    name: Undo
+    description: How to undo things
+    _links:
+      self:
+        href: /design/topics/undo.yaml
+      topicGuidelines:
+        href: /design/topics/undo/guidelines.yaml
+  - id: http-status-302
+    category: HTTP Status Redirection
+    name: 302 Found
+    description: |
+      Common way of performing URL redirection. An HTTP response with this status code will additionally provide a URL in the location header field. The user agent (e.g. a web browser) is invited by a response with this code to make a second, otherwise identical, request to the new URL specified in the location field.
+    _links:
+      self:
+        href: /design/topics/http-status-302.yaml
+      topicGuidelines:
+        href: /design/topics/http-status-302/guidelines.yaml
+  - id: http-status-303
+    category: HTTP Status Redirection
+    name: 303 See Other
+    description: |
+      The response to the request can be found under another URI using a GET method. When received in response to a POST (or PUT/DELETE), the client should presume that the server has received the data and should issue a redirect with a separate GET message.
+    _links:
+      self:
+        href: /design/topics/http-status-303.yaml
+      topicGuidelines:
+        href: /design/topics/http-status-303/guidelines.yaml
+  - id: http-status-400
+    category: HTTP Status User Error
+    name: 400 Bad Request
+    description: |
+      The server cannot or will not process the request due to an apparent client error (e.g., malformed request syntax, too large size, invalid request message framing, or deceptive request routing).
+    _links:
+      self:
+        href: /design/topics/http-status-400.yaml
+      topicGuidelines:
+        href: /design/topics/http-status-400/guidelines.yaml
+  - id: http-status-403
+    category: HTTP Status User Error
+    name: 403 Forbidden
+    description: 'The request was a valid request, but the server is refusing to respond to it. The user might be logged in but does not have the necessary permissions for the resource.'
+    _links:
+      self:
+        href: /design/topics/http-status-403.yaml
+      topicGuidelines:
+        href: /design/topics/http-status-403/guidelines.yaml
+  - id: http-status-422
+    category: HTTP Status User Error
+    name: 422 Unprocessable Entity
+    description: The request was well-formed but was unable to be followed due to semantic errors.
+    _links:
+      self:
+        href: /design/topics/http-status-422.yaml
+      topicGuidelines:
+        href: /design/topics/http-status-422/guidelines.yaml
+  - id: http-status-500
+    category: HTTP Status Server Error
+    name: 500 Internal Server Error
+    description: 'A generic error message, given when an unexpected condition was encountered and no more specific message is suitable.'
+    _links:
+      self:
+        href: /design/topics/http-status-500.yaml
+      topicGuidelines:
+        href: /design/topics/http-status-500/guidelines.yaml
+  - id: http-status-503
+    category: HTTP Status Server Error
+    name: 503 Service Unavailable
+    description: 'The server is currently unavailable (because it is overloaded or down for maintenance). Generally, this is a temporary state.'
+    _links:
+      self:
+        href: /design/topics/http-status-503.yaml
+      topicGuidelines:
+        href: /design/topics/http-status-503/guidelines.yaml
+  - id: resource-id
+    category: Resources
+    name: Resource ID
+    description: What is a resource ID and/or how it's built
+    _links:
+      self:
+        href: /design/topics/resource-id.yaml
+      topicGuidelines:
+        href: /design/topics/resource-id/guidelines.yaml
+  - id: collection-retrieve
+    category: Collection Resources
+    name: Retrieve a collection
+    description: How to get a collection or resources
+    _links:
+      self:
+        href: /design/topics/collection-retrieve.yaml
+      topicGuidelines:
+        href: /design/topics/collection-retrieve/guidelines.yaml
+  - id: query-parameter
+    category: Miscellaneous
+    name: Query parameters
+    description: How to use query parameters
+    _links:
+      self:
+        href: /design/topics/query-parameter.yaml
+      topicGuidelines:
+        href: /design/topics/query-parameter/guidelines.yaml
+  - id: asynchronicity
+    category: Asynchronicity
+    name: Asynchronicity
+    description: How to handle long operations
+    _links:
+      self:
+        href: /design/topics/asynchronicity.yaml
+      topicGuidelines:
+        href: /design/topics/asynchronicity/guidelines.yaml
+  - id: collection-sorting
+    category: Collection Resources
+    name: Sorting a collection
+    description: How to sort a collection of resources
+    _links:
+      self:
+        href: /design/topics/collection-sorting.yaml
+      topicGuidelines:
+        href: /design/topics/collection-sorting/guidelines.yaml
+  - id: data-standards
+    category: Data
+    name: Standards data
+    description: 'Which standard use for values like languages, countries, currencies, ...'
+    _links:
+      self:
+        href: /design/topics/data-standards.yaml
+      topicGuidelines:
+        href: /design/topics/data-standards/guidelines.yaml
+  - id: errors
+    category: Error handling
+    name: Errors
+    description: How to handle errors
+    _links:
+      self:
+        href: /design/topics/errors.yaml
+      topicGuidelines:
+        href: /design/topics/errors/guidelines.yaml
+  - id: http-status-406
+    category: HTTP Status User Error
+    name: 406 Not Acceptable
+    description: The requested resource is capable of generating only content not acceptable according to the Accept headers sent in the request.
+    _links:
+      self:
+        href: /design/topics/http-status-406.yaml
+      topicGuidelines:
+        href: /design/topics/http-status-406/guidelines.yaml
+  - id: http-status-408
+    category: HTTP Status User Error
+    name: 408 Request Timeout
+    description: |
+      The server timed out waiting for the request. According to HTTP specifications: The client did not produce a request within the time that the server was prepared to wait. The client MAY repeat the request without modifications at any later time.
+    _links:
+      self:
+        href: /design/topics/http-status-408.yaml
+      topicGuidelines:
+        href: /design/topics/http-status-408/guidelines.yaml
+  - id: http-status-409
+    category: HTTP Status User Error
+    name: 409 Conflict
+    description: |
+      Indicates that the request could not be processed because of conflict in the request, such as an edit conflict between multiple simultaneous updates.
+    _links:
+      self:
+        href: /design/topics/http-status-409.yaml
+      topicGuidelines:
+        href: /design/topics/http-status-409/guidelines.yaml
+  - id: http-status-410
+    category: HTTP Status User Error
+    name: 410 Gone
+    description: |
+      Indicates that the resource requested is no longer available and will not be available again. This should be used when a resource has been intentionally removed and the resource should be purged. Upon receiving a 410 status code, the client should not request the resource in the future. Clients such as search engines should remove the resource from their indices. Most use cases do not require clients and search engines to purge the resource, and a *404 Not Found* may be used instead.
+    _links:
+      self:
+        href: /design/topics/http-status-410.yaml
+      topicGuidelines:
+        href: /design/topics/http-status-410/guidelines.yaml
+  - id: http-status-411
+    category: HTTP Status User Error
+    name: 411 Length Required
+    description: 'The request did not specify the length of its content, which is required by the requested resource.'
+    _links:
+      self:
+        href: /design/topics/http-status-411.yaml
+      topicGuidelines:
+        href: /design/topics/http-status-411/guidelines.yaml
+  - id: http-status-415
+    category: HTTP Status User Error
+    name: 415 Unsupported Media Type
+    description: 'The request entity has a media type which the server or resource does not support. For example, the client uploads an image as image/svg+xml, but the server requires that images use a different format.'
+    _links:
+      self:
+        href: /design/topics/http-status-415.yaml
+      topicGuidelines:
+        href: /design/topics/http-status-415/guidelines.yaml
+  - id: http-status-501
+    category: HTTP Status Server Error
+    name: 501 Not Implemented
+    description: 'The server either does not recognize the request method, or it lacks the ability to fulfill the request. Usually this implies future availability (e.g., a new feature of a web-service API).'
+    _links:
+      self:
+        href: /design/topics/http-status-501.yaml
+      topicGuidelines:
+        href: /design/topics/http-status-501/guidelines.yaml
+  - id: resource-state
+    category: Resources
+    name: Resource's state
+    description: How to change a resource's state/status (like processed/sent/paid/...)
+    _links:
+      self:
+        href: /design/topics/resource-state.yaml
+      topicGuidelines:
+        href: /design/topics/resource-state/guidelines.yaml
+  - id: debug-diagnose
+    category: Miscellaneous
+    name: Debug and diagnose
+    description: How to provide informations to debug and diagnose
+    _links:
+      self:
+        href: /design/topics/debug-diagnose.yaml
+      topicGuidelines:
+        href: /design/topics/debug-diagnose/guidelines.yaml
+  - id: http-status-206
+    category: HTTP Status Success
+    name: 206 Partial Content
+    description: |
+      The server is delivering only part of the resource (byte serving) due to a range header sent by the client. The range header is used by HTTP clients to enable resuming of interrupted downloads, or split a download into multiple simultaneous streams.
+    _links:
+      self:
+        href: /design/topics/http-status-206.yaml
+      topicGuidelines:
+        href: /design/topics/http-status-206/guidelines.yaml
+  - id: http-status-429
+    category: HTTP Status User Error
+    name: 429 Too Many Requests
+    description: The user has sent too many requests in a given amount of time. Intended for use with rate-limiting schemes.
+    _links:
+      self:
+        href: /design/topics/http-status-429.yaml
+      topicGuidelines:
+        href: /design/topics/http-status-429/guidelines.yaml
+  - id: performance
+    category: Miscellaneous
+    name: Performance and bandwidth
+    description: How to deal with high traffic or consumers with low bandwith
+    _links:
+      self:
+        href: /design/topics/performance.yaml
+      topicGuidelines:
+        href: /design/topics/performance/guidelines.yaml
+  - id: http
+    category: HTTP Protocol
+    name: HTTP protocol
+    description: General informations about HTTP protocol
+    _links:
+      self:
+        href: /design/topics/http.yaml
+      topicGuidelines:
+        href: /design/topics/http/guidelines.yaml
+  - id: notifications-server-events
+    category: Asynchronicity
+    name: Notifying API consumers
+    description: How to send events or notifications to API consumers
+    _links:
+      self:
+        href: /design/topics/notifications-server-events.yaml
+      topicGuidelines:
+        href: /design/topics/notifications-server-events/guidelines.yaml
+  - id: resource-change-tracking
+    category: Resources
+    name: Track change
+    description: How to track change on resources
+    _links:
+      self:
+        href: /design/topics/resource-change-tracking.yaml
+      topicGuidelines:
+        href: /design/topics/resource-change-tracking/guidelines.yaml
+  - id: guiding-input
+    category: Miscellaneous
+    name: Guiding inputs
+    description: How to help consumers or end user to input relevant data
+    _links:
+      self:
+        href: /design/topics/guiding-input.yaml
+      topicGuidelines:
+        href: /design/topics/guiding-input/guidelines.yaml
+  - id: api-counts
+    category: API Design
+    name: API counts
+    description: How many endpoints/resources in an API?
+    _links:
+      self:
+        href: /design/topics/api-counts.yaml
+      topicGuidelines:
+        href: /design/topics/api-counts/guidelines.yaml
+  - id: http-status-423
+    category: HTTP Status User Error
+    name: 423 Locked
+    description: The resource that is being accessed is locked.
+    _links:
+      self:
+        href: /design/topics/http-status-423.yaml
+      topicGuidelines:
+        href: /design/topics/http-status-423/guidelines.yaml
+  - id: http-status-428
+    category: HTTP Status User Error
+    name: 428 Precondition Required
+    description: |
+      The origin server requires the request to be conditional.
+      Intended to prevent the *lost update* problem, where a client GETs a resource's state, modifies it,
+      and PUTs it back to the server, when meanwhile a third party has modified the state on the server,
+      leading to a conflict.
+    _links:
+      self:
+        href: /design/topics/http-status-428.yaml
+      topicGuidelines:
+        href: /design/topics/http-status-428/guidelines.yaml
+  - id: naming-language
+    category: Naming
+    name: Language
+    description: Which language(s) use when designing an API
+    _links:
+      self:
+        href: /design/topics/naming-language.yaml
+      topicGuidelines:
+        href: /design/topics/naming-language/guidelines.yaml
+_links:
+  self:
+    href: /design/topics.yaml
+  design:
+    href: /design.yaml
