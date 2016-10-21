@@ -118,6 +118,7 @@ title: My Github YAML Editor Micro Tool Base
 <h1>API Stylebook (Builder)</h1>
 <p>I was pretty stoked when my friend Arnaud Lauret developed the <a href="http://apistylebook.com/">API Stylebook</a>. I took the YAML core of the design topics he's aggregated across the API design guides he's indexed, and started working with an editor that runs on Github, and will allow anyone to fork, and use to build their own API Stylebook using his work.</p>
 <p>The JavaScript on this page loads the _data/topics.yaml from this projects Github repository. If you fork this project, and enter a valid Github personal token, you should be able to save the results.</p>
+<p align="center"><strong>token:</strong> <input type="text" id="token" name="token" value="[put Github personal token here]" /></p>
 <table width="100%" border="0" cellpadding="3" id="editor"></table>
 <center><input style="padding: 3px; margin: 5px; font-weight: bold;" type="button" name="SaveYAML" value="Save API Stylebook Design Guide" onclick="saveYAMLStore();" /></center>
 <p>This is just a prototype. You are welcome to fork, but I will keep working on it, adding autocomplete suggestions based upon other API design guides, and the ability to ignore some elements. Maybe I'll also work on allowing the addition of elements to the design guide--both categories and elements.</p>
