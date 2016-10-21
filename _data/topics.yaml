@@ -610,7 +610,7 @@ items:
         href: /design/topics/collection-filtering.yaml
       topicGuidelines:
         href: /design/topics/collection-filtering/guidelines.yaml
-    value: test
+    value: ''
   - id: naming
     category: Naming
     name: Naming
@@ -915,7 +915,7 @@ items:
         href: /design/topics/http-status-501.yaml
       topicGuidelines:
         href: /design/topics/http-status-501/guidelines.yaml
-    value: test
+    value: ''
   - id: resource-state
     category: Resources
     name: Resource's state
