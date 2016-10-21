@@ -47,10 +47,23 @@ title: My Github YAML Editor Micro Tool Base
 
               $( "#editor" ).append( "<tr><td colspan='2'><hr style='padding: 0px; margin: 0px;'></td></tr>");
 
+              $displayCategory = '';
+
               $.each($yaml_store, function($rowKey, $rowEntry) {
 
-                console.log($rowKey);
-                console.log($rowEntry.category);
+                //console.log($rowKey);
+                //console.log($rowEntry.category);
+
+                $topic_category = $rowEntry.category;
+                $topic_name = $rowEntry.name;
+                $topic_description = $rowEntry.description;
+
+                if($displayCategory != $topic_category)
+                  {
+                  $( "#editor" ).append( "<tr id='" + $rowKey + "' style='padding: 3px 0px 3px 0px;'><td align='left' style='font-weight: bold; font-size: 18px;'>" + $topic_category + "</td></tr>" );
+                  $displayCategory = $rowEntry.category;
+                  }
+
 
                 //$fieldNumKey = 0;
                 //$.each($rowEntry, function($fieldKey, $fieldEntry) {
