@@ -79,8 +79,8 @@ title: My Github YAML Editor Micro Tool Base
 
                   if($topic_category == $category)
                     {
-                    $( "#editor" ).append( "<tr id='" + $topic_id + "' title='entry' style='padding: 3px 0px 3px 0px;'><td align='right' style='width: 30%; font-size: 14px;'><a href='http://apistylebook.com/design/topics/" + $topic_id + "'>" + $topic_name + "</a>: <br />" + $topic_description + "</td><td><textarea name='" + $topic_name + "' id='" + $topic_id + "-value' style='width: 100%; height: 50px;'></textarea></td></tr>" );
-                    $( "#editor" ).append( "<tr title='line'><td colspan='2'><hr style='padding: 0px; margin: 0px;'></td></tr>");
+                    $( "#editor" ).append( "<tr id='" + $topic_id + "' title='entry' style='padding: 3px 0px 3px 0px;'><td align='center' style='width: 30%; font-size: 14px;'><a href='http://apistylebook.com/design/topics/" + $topic_id + "'>" + $topic_name + "</a>: " + $topic_description + "</td></tr><tr><td align='center'><textarea name='" + $topic_name + "' id='" + $topic_id + "-value' style='width: 100%; height: 50px;'></textarea></td></tr>" );
+                    $( "#editor" ).append( "<tr title='line'><td align='center'><hr style='padding: 0px; margin: 0px;'></td></tr>");
                     }
                   });
               });
