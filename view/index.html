@@ -148,10 +148,8 @@ title: My Github YAML Editor Micro Tool Base
         }
 
 </script>
-<h1>API Stylebook (Builder)</h1>
-<p>I was pretty stoked when my friend Arnaud Lauret developed the <a href="http://apistylebook.com/">API Stylebook</a>. I took the <a href="https://github.com/arno-di-loreto/apistylebook-api/blob/master/design/topics.yaml" target="_blank">YAML core of the design topics</a> he's aggregated, and started developing this editor that runs 100% on Github, so that anyone to fork, and use to build their own API Stylebook using Arnaud's work.</p>
+<h1>API Stylebook (Builder) - Viewer</h1>
 <p>The JavaScript on this page loads <a href="https://github.com/api-evangelist-tools/api-design-guide/blob/gh-pages/_data/topics.yaml">the _data/topics.yaml from this projects Github repository</a>. If you fork this project, and enter a valid <a href="https://github.com/settings/tokens">Github personal access token</a>, you should be able to save the results, creating your own style guide.</p>
-<p align="center"><a href="https://github.com/settings/tokens"><strong>personal access token:</strong></a> <input type="text" id="token" name="token" value="[put Github personal token here]" style="width: 50%;" /></p>
 <table width="100%" border="0" cellpadding="3" id="editor"></table>
 <center><input style="padding: 3px; margin: 5px; font-weight: bold;" type="button" name="SaveYAML" value="Save API Stylebook Design Guide" onclick="saveYAMLStore();" /></center>
 <p>This is just a prototype. You are welcome to fork, but I will keep working on it, adding autocomplete suggestions based upon other API design guides, and the ability to ignore some elements. Maybe I'll also work on allowing the addition of elements to the design guide--both categories and elements.</p>
