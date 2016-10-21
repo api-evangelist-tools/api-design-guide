@@ -41,7 +41,7 @@ title: My Github YAML Editor Micro Tool Base
         if(err == null && $oAuthToken != null)
           {
             // If no error we have access, read YAML store
-            repo.read('gh-pages', '_data/store.yaml', function(err, data) {
+            repo.read('gh-pages', '_data/topics.yaml', function(err, data) {
 
               $yaml_store = jsyaml.load(data);
 
@@ -49,11 +49,14 @@ title: My Github YAML Editor Micro Tool Base
 
               $.each($yaml_store, function($rowKey, $rowEntry) {
 
-                $fieldNumKey = 0;
-                $.each($rowEntry, function($fieldKey, $fieldEntry) {
-                  $( "#editor" ).append( "<tr id='row-" + $rowKey + "' style='padding: 3px 0px 3px 0px;'><td id='row-" + $rowKey + "-" + $fieldNumKey + "' align='right' style='font-weight: bold;'>" + $fieldKey + ":</td><td><input type='text' name='" + $fieldKey + "' id='text-" + $rowKey + "-" + $fieldNumKey + "' value='" + $fieldEntry + "' style='width: 100%;' /></td></tr>" );
-                  $fieldNumKey++;
-                });
+                console.log($rowKey);
+                console.log($rowEntry);
+
+                //$fieldNumKey = 0;
+                //$.each($rowEntry, function($fieldKey, $fieldEntry) {
+//                  $( "#editor" ).append( "<tr id='row-" + $rowKey + "' style='padding: 3px 0px 3px 0px;'><td id='row-" + $rowKey + "-" + $fieldNumKey + "' align='right' style='font-weight: bold;'>" + $fieldKey + ":</td><td><input type='text' name='" + $fieldKey + "' id='text-" + $rowKey + "-" + $fieldNumKey + "' value='" + $fieldEntry + "' style='width: 100%;' /></td></tr>" );
+                  //$fieldNumKey++;
+                //});
 
                 $( "#editor" ).append( "<tr><td colspan='2'><hr style='padding: 0px; margin: 0px;'></td></tr>");
 
@@ -97,7 +100,7 @@ title: My Github YAML Editor Micro Tool Base
 
             $.each(tree, function(treeKey, treeValue) {
 
-              $writepath = '_data/store.yaml';
+              $writepath = '_data/topics.yaml';
               $path = treeValue['path'];
               $sha = treeValue['sha'];
               //console.log($path + ' == ' + $writepath);
@@ -114,6 +117,6 @@ title: My Github YAML Editor Micro Tool Base
 
 </script>
 <h1>My Github YAML Editor Micro Tool Base</h1>
-<p align="center">YAML loaded from _data/store.yaml for editing, <a href="/github-micro-tool-yaml/">view by going back to home page</a>.</p>
+<p align="center">YAML loaded from _data/topics.yaml for editing, <a href="/github-micro-tool-yaml/">view by going back to home page</a>.</p>
 <table width="100%" border="0" cellpadding="3" id="editor"></table>
 <center><input type="button" name="SaveYAML" value="Save YAML" onclick="saveYAMLStore();" /></center>
