@@ -41,7 +41,7 @@ title: My Github YAML Editor Micro Tool Base
         if(err == null && $oAuthToken != null)
           {
 
-            $categories = {};
+            $categories = new Array();
             $categories.push("API Design");
             // If no error we have access, read YAML store
             repo.read('gh-pages', '_data/topics.yaml', function(err, data) {
