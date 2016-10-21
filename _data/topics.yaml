@@ -8,7 +8,7 @@ items:
         href: /design/topics/collection-pagination.yaml
       topicGuidelines:
         href: /design/topics/collection-pagination/guidelines.yaml
-    value: ''
+    value: test
   - id: collection
     category: Collection Resources
     name: Collection
@@ -18,7 +18,7 @@ items:
         href: /design/topics/collection.yaml
       topicGuidelines:
         href: /design/topics/collection/guidelines.yaml
-    value: ''
+    value: test
   - id: data-format
     category: Data
     name: Data format
@@ -610,7 +610,7 @@ items:
         href: /design/topics/collection-filtering.yaml
       topicGuidelines:
         href: /design/topics/collection-filtering/guidelines.yaml
-    value: ''
+    value: test
   - id: naming
     category: Naming
     name: Naming
