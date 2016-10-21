@@ -106,12 +106,12 @@ title: My Github YAML Editor Micro Tool Base
               $id = row.id;
               if($type=='entry')
                 {
-                  console.log($id);
+                  //console.log($id);
                   $name = document.getElementById($id+'-value').name
-                  console.log($name);
+                  //console.log($name);
                   $value = document.getElementById($id+'-value').value;
-                  //$yaml_load['items'][$name]['value'] = $value;
-                  console.log($yaml_load['items'][$name]);
+                  $yaml_load['items'][$name]['value'] = $value;
+                  //console.log($yaml_load['items'][$name]);
                 }
               });
 
@@ -120,7 +120,7 @@ title: My Github YAML Editor Micro Tool Base
 
           // Grab the token from cookie
           $oAuthToken = document.getElementById('token').value;
-          console.log($oAuthToken);
+          //console.log($oAuthToken);
 
           var github = new Github({token: $oAuthToken,auth: "oauth"});
           var repo = github.getRepo($org,$repo);
