@@ -610,7 +610,7 @@ items:
         href: /design/topics/collection-filtering.yaml
       topicGuidelines:
         href: /design/topics/collection-filtering/guidelines.yaml
-    value: ''
+    value: There will be enhanced filtering of all the APIs in the collections!
   - id: naming
     category: Naming
     name: Naming
@@ -771,7 +771,7 @@ items:
         href: /design/topics/collection-retrieve.yaml
       topicGuidelines:
         href: /design/topics/collection-retrieve/guidelines.yaml
-    value: ''
+    value: We haven't thought about how to retrieve a collection.
   - id: query-parameter
     category: Miscellaneous
     name: Query parameters
@@ -801,7 +801,7 @@ items:
         href: /design/topics/collection-sorting.yaml
       topicGuidelines:
         href: /design/topics/collection-sorting/guidelines.yaml
-    value: ''
+    value: 'Will will sort one way, never the other way.'
   - id: data-standards
     category: Data
     name: Standards data
