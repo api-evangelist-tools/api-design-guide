@@ -8,7 +8,9 @@ items:
         href: /design/topics/collection-pagination.yaml
       topicGuidelines:
         href: /design/topics/collection-pagination/guidelines.yaml
-    value: We are going to paginate like nobody else paginates. It will be HUGE!
+    value: >-
+      We are going to paginate like nobody else paginates. It will be HUGE! Edit
+      This!
   - id: collection
     category: Collection Resources
     name: Collection
